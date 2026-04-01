@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIM EYEBROW STUDIO | Premium Permanent Makeup Bangkok</title>
+    <meta
+      name="description"
+      content="ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศีลปะขั้นสูง"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#8B1E2D",
+              "accent-sec": "#B23A48",
+              dark: "#0F0F0F",
+            },
+            fontFamily: {
+              playfair: ["Playfair Display", "serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-gray-100 font-inter">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 pt-4">
+      <div
+        id="navbar-inner"
+        class="navbar-glass max-w-7xl mx-auto px-6 py-3 flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-3">
+          <span
+            class="text-xl md:text-2xl font-playfair font-bold tracking-wider"
+            >TIM <span class="text-accent-sec">EYEBROW</span> STUDIO</span
+          >
+        </a>
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li class="dropdown relative group">
+            <a
+              href="#services"
+              class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
+              >บริการ
+              <i
+                class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
+              ></i
+            ></a>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 p-2">
+              <a
+                href="#services"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Hairstroke</a
+              >
+              <a
+                href="#services"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Shading</a
+              >
+              <a
+                href="#services"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Lips</a
+              >
+              <div class="sub-dropdown relative">
+                <a
+                  href="#services"
+                  class="dropdown-item px-4 py-2.5 rounded-lg text-sm flex items-center justify-between"
+                  >Eyeliner <i class="fas fa-chevron-right text-[10px]"></i
+                ></a>
+                <div
+                  class="sub-dropdown-menu absolute left-full top-0 ml-2 w-48 p-2"
+                >
+                  <a
+                    href="#services"
+                    class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                    >Eyeliner</a
+                  >
+                  <a
+                    href="#services"
+                    class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                    >Inner-liner</a
+                  >
+                  <a
+                    href="#services"
+                    class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                    >Soft liner</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown relative group">
+            <a
+              href="#equipment"
+              class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
+              >สีและอุปกรณ์
+              <i
+                class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
+              ></i
+            ></a>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 p-2">
+              <a
+                href="#equipment"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Labina (Germany)</a
+              >
+              <a
+                href="#equipment"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Mara Pro (USA)</a
+              >
+              <a
+                href="#equipment"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Xion S</a
+              >
+              <a
+                href="#equipment"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Vertix Needle</a
+              >
+            </div>
+          </li>
+          <li class="dropdown relative group">
+            <a
+              href="#removal"
+              class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
+              >ลบรอยสัก
+              <i
+                class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
+              ></i
+            ></a>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 w-48 p-2">
+              <a
+                href="#removal"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                >Etalon Mix</a
+              >
+            </div>
+          </li>
+          <li>
+            <a
+              href="#course"
+              class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors"
+              >คลาสเรียน</a
+            >
+          </li>
+          <li class="dropdown relative group">
+            <a
+              href="#booking"
+              class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
+              >จองใช้บริการ
+              <i
+                class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
+              ></i
+            ></a>
+            <div class="dropdown-menu absolute top-full right-0 mt-2 w-48 p-2">
+              <a
+                href="https://wa.me/66842364956"
+                target="_blank"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                ><i class="fab fa-whatsapp mr-2"></i>WhatsApp</a
+              >
+              <a
+                href="https://lin.ee/IjNi9e3"
+                target="_blank"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                ><i class="fab fa-line mr-2"></i>Line</a
+              >
+              <a
+                href="https://www.instagram.com/tim_eyebrow"
+                target="_blank"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                ><i class="fab fa-instagram mr-2"></i>Instagram</a
+              >
+              <a
+                href="https://www.facebook.com/timeyebrowscenter"
+                target="_blank"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                ><i class="fab fa-facebook mr-2"></i>Facebook</a
+              >
+              <a
+                href="https://www.tiktok.com/@timeyebrow"
+                target="_blank"
+                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
+                ><i class="fab fa-tiktok mr-2"></i>TikTok</a
+              >
+            </div>
+          </li>
+        </ul>
+        <!-- Hamburger -->
+        <button
+          id="hamburger"
+          class="hamburger lg:hidden flex flex-col gap-1.5 p-2"
+        >
+          <span class="hamburger-line w-6 h-0.5 bg-white rounded-full"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-white rounded-full"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-white rounded-full"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu lg:hidden mt-2 navbar-glass max-w-7xl mx-auto rounded-2xl overflow-hidden"
+      >
+        <div class="p-4 space-y-1">
+          <button
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+          >
+            บริการ
+            <i
+              class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
+            ></i>
+          </button>
+          <div class="mobile-submenu pl-4 space-y-1">
+            <a
+              href="#services"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Hairstroke</a
+            >
+            <a
+              href="#services"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Shading</a
+            >
+            <a
+              href="#services"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Lips</a
+            >
+            <button
+              class="mobile-sub-dropdown-toggle w-full text-left px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec flex justify-between items-center"
+            >
+              Eyeliner
+              <i
+                class="mobile-sub-arrow fas fa-chevron-down text-[10px] transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="mobile-sub-submenu pl-4 space-y-1">
+              <a
+                href="#services"
+                class="block px-4 py-2 rounded-lg text-xs text-gray-400 hover:text-accent-sec"
+                >Eyeliner</a
+              >
+              <a
+                href="#services"
+                class="block px-4 py-2 rounded-lg text-xs text-gray-400 hover:text-accent-sec"
+                >Inner-liner</a
+              >
+              <a
+                href="#services"
+                class="block px-4 py-2 rounded-lg text-xs text-gray-400 hover:text-accent-sec"
+                >Soft liner</a
+              >
+            </div>
+          </div>
+          <button
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+          >
+            สีและอุปกรณ์
+            <i
+              class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
+            ></i>
+          </button>
+          <div class="mobile-submenu pl-4 space-y-1">
+            <a
+              href="#equipment"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Labina (Germany)</a
+            >
+            <a
+              href="#equipment"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Mara Pro (USA)</a
+            >
+            <a
+              href="#equipment"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Xion S</a
+            >
+            <a
+              href="#equipment"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Vertix Needle</a
+            >
+          </div>
+          <button
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+          >
+            ลบรอยสัก
+            <i
+              class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
+            ></i>
+          </button>
+          <div class="mobile-submenu pl-4 space-y-1">
+            <a
+              href="#removal"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              >Etalon Mix</a
+            >
+          </div>
+          <a
+            href="#course"
+            class="block px-4 py-3 rounded-xl hover:bg-white/5 font-medium"
+            >คลาสเรียน</a
+          >
+          <button
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+          >
+            จองใช้บริการ
+            <i
+              class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
+            ></i>
+          </button>
+          <div class="mobile-submenu pl-4 space-y-1">
+            <a
+              href="https://wa.me/66842364956"
+              target="_blank"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              ><i class="fab fa-whatsapp mr-2"></i>WhatsApp</a
+            >
+            <a
+              href="https://lin.ee/IjNi9e3"
+              target="_blank"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              ><i class="fab fa-line mr-2"></i>Line</a
+            >
+            <a
+              href="https://www.instagram.com/tim_eyebrow"
+              target="_blank"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              ><i class="fab fa-instagram mr-2"></i>Instagram</a
+            >
+            <a
+              href="https://www.facebook.com/timeyebrowscenter"
+              target="_blank"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              ><i class="fab fa-facebook mr-2"></i>Facebook</a
+            >
+            <a
+              href="https://www.tiktok.com/@timeyebrow"
+              target="_blank"
+              class="block px-4 py-2 rounded-lg text-sm text-gray-300 hover:text-accent-sec"
+              ><i class="fab fa-tiktok mr-2"></i>TikTok</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- WRAP MAIN CONTENT -->
+    <div id="main-content">
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="relative min-h-screen flex items-center overflow-hidden"
+    >
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- 🎬 YouTube Hero Video (autoplay, muted, loop, no controls) -->
+        <iframe
+          id="hero-youtube"
+          src="https://www.youtube.com/embed/1wgUY6n--3w?autoplay=1&mute=1&loop=1&playlist=1wgUY6n--3w&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0&playsinline=1"
+          class="absolute top-1/2 left-1/2 w-[120vw] h-[120vh] min-w-[120%] min-h-[120%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <!-- Fallback image -->
+        <img
+          src="images/hero-beauty.png"
+          alt="TIM EYEBROW STUDIO"
+          class="w-full h-full object-cover absolute inset-0"
+          style="z-index:-1;"
+        />
+      </div>
+      <div class="hero-overlay absolute inset-0"></div>
+      <div class="glow-orb top-20 right-20"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-32">
+        <div class="max-w-2xl">
+          <p
+            class="text-accent-sec font-medium tracking-[0.3em] uppercase text-sm mb-4 fade-up"
+          >
+            Premium Permanent Makeup
+          </p>
+          <h1
+            class="text-5xl md:text-7xl font-playfair font-bold leading-tight mb-6 fade-up delay-1"
+          >
+            TIM<br /><span class="text-accent-sec">EYEBROW</span><br />STUDIO
+          </h1>
+          <p
+            class="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 fade-up delay-2"
+          >
+            ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง
+          </p>
+          <p class="text-gray-400 mb-8 fade-up delay-3">
+            ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง
+            เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ
+          </p>
+          <div class="flex flex-wrap gap-4 fade-up delay-4">
+            <a href="#booking" class="btn-accent pulse-glow"
+              ><i class="fas fa-calendar-check mr-2"></i>Book Appointment</a
+            >
+            <a href="#services" class="btn-outline">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="py-16 border-y border-white/5">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+      >
+        <div class="fade-up">
+          <p
+            class="text-4xl font-playfair font-bold text-accent-sec counter"
+            data-target="8"
+            data-suffix="+"
+          >
+            0
+          </p>
+          <p class="text-gray-400 text-sm mt-2">Years Experience</p>
+        </div>
+        <div class="fade-up delay-1">
+          <p
+            class="text-4xl font-playfair font-bold text-accent-sec counter"
+            data-target="5000"
+            data-suffix="+"
+          >
+            0
+          </p>
+          <p class="text-gray-400 text-sm mt-2">Happy Clients</p>
+        </div>
+        <div class="fade-up delay-2">
+          <p
+            class="text-4xl font-playfair font-bold text-accent-sec counter"
+            data-target="200"
+            data-suffix="+"
+          >
+            0
+          </p>
+          <p class="text-gray-400 text-sm mt-2">Students Trained</p>
+        </div>
+        <div class="fade-up delay-3">
+          <p
+            class="text-4xl font-playfair font-bold text-accent-sec counter"
+            data-target="100"
+            data-suffix="%"
+          >
+            0
+          </p>
+          <p class="text-gray-400 text-sm mt-2">Satisfaction</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO PREVIEW -->
+    <section class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up"
+          >
+            ผลงานของเรา
+          </h2>
+          <p class="text-gray-400 mt-6 fade-up delay-1">
+            รวมผลงาน Permanent Makeup จาก Master Tim
+          </p>
+        </div>
+        <div class="video-container fade-up delay-2">
+          <div class="relative aspect-video rounded-2xl overflow-hidden">
+            <!-- 🎬 YouTube Video Preview (with controls) -->
+            <iframe
+              src="https://www.youtube.com/embed/OtH8ljfiM24?rel=0&modestbranding=1"
+              class="w-full h-full absolute inset-0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider max-w-7xl mx-auto" />
+
+    <!-- SERVICES -->
+<section id="services" class="py-24 relative">
+<div class="glow-orb -left-40 top-20"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Our Services</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">บริการของเรา</h2></div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Hairstroke -->
+<div class="card-luxury p-6 fade-up delay-1">
+<div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5"><i class="fas fa-pen-nib text-accent-sec text-xl"></i></div>
+<h3 class="text-xl font-playfair font-semibold mb-3">Hairstroke</h3>
+<p class="text-gray-400 text-sm leading-relaxed">เทคนิคการสักคิ้วลายเส้นด้วยเข็มนาโน วาดเส้นขนคิ้วทีละเส้นให้ดูเหมือนขนคิ้วจริง เพื่อสร้างมิติและความเป็นธรรมชาติ เหมาะสำหรับผู้ที่ต้องการเติมเต็มคิ้วบาง</p>
+</div>
+<!-- Shading -->
+<div class="card-luxury p-6 fade-up delay-2">
+<div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5"><i class="fas fa-paint-brush text-accent-sec text-xl"></i></div>
+<h3 class="text-xl font-playfair font-semibold mb-3">Shading / Ombre Brows</h3>
+<p class="text-gray-400 text-sm leading-relaxed">เทคนิคสักคิ้วฝุ่นให้ลุคธรรมชาติ ดูนุ่มฟุ้งเหมือนเขียนคิ้วด้วยดินสอ เหมาะกับทุกเพศทุกวัย โดยเฉพาะคนที่ต้องการให้คิ้วดูมีมิติแต่ไม่แข็ง</p>
+</div>
+<!-- Lips -->
+<div class="card-luxury p-6 fade-up delay-3">
+<div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5"><i class="fas fa-lips text-accent-sec text-xl">💋</i></div>
+<h3 class="text-xl font-playfair font-semibold mb-3">Soft Lips</h3>
+<p class="text-gray-400 text-sm leading-relaxed">ฝังสีปากกึ่งถาวร แก้ปัญหาสีปากคล้ำหรือซีดให้ดูอมชมพูอย่างเป็นธรรมชาติ สีฟุ้งเบลอคล้ายทาลิปสติกแบบเกาหลี บอบช้ำน้อย</p>
+</div>
+<!-- Eyeliner -->
+<div class="card-luxury p-6 fade-up delay-4">
+<div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5"><i class="fas fa-eye text-accent-sec text-xl"></i></div>
+<h3 class="text-xl font-playfair font-semibold mb-3">Eyeliner</h3>
+<p class="text-gray-400 text-sm leading-relaxed">สักตา Eyeliner, Inner-liner (สักชิดโคนขนตาให้ดูธรรมชาติ) และ Soft liner (แรเงาฟุ้งเหมือนอายแชโดว์) ช่วยให้ดวงตาดูคมชัดโดยไม่ต้องแต่งตาทุกวัน</p>
+</div>
+</div>
+</div>
+</section>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- EQUIPMENT -->
+<section id="equipment" class="py-24 relative">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Colors & Equipment</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">สีและอุปกรณ์ระดับพรีเมียม</h2></div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Labina -->
+<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-1">
+<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">Germany</span><h3 class="text-2xl font-playfair font-bold mt-4">LaBina®</h3></div></div>
+<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">High-quality pigment inks with impressive range of shades. No chemical preservatives, without iron oxide. Made in Germany with 35+ years of experience. All colours are REACH compliant.</p></div>
+</div>
+<!-- Mara Pro -->
+<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-2">
+<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">USA</span><h3 class="text-2xl font-playfair font-bold mt-4">MARA Pro</h3></div></div>
+<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">Hybrid formula pigment inks for PMU — lips, brows, eyes. Very fine particles for good color diffusion. Cruelty-free, environmentally friendly, with MSDS available for each shade.</p></div>
+</div>
+<!-- Xion S -->
+<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-3">
+<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">USA</span><h3 class="text-2xl font-playfair font-bold mt-4">Spektra Xion S</h3></div></div>
+<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">Premium pen-style rotary machine by Microbeau International. Designed specifically for PMU and cosmetic tattooing — precision, versatility, and comfort for professionals.</p></div>
+</div>
+<!-- Vertix -->
+<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-4">
+<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">Professional</span><h3 class="text-2xl font-playfair font-bold mt-4">Vertix Needle</h3></div></div>
+<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">เข็มสักแบบแคร์ทริดจ์ออกแบบเพื่อ Permanent Makeup (PMU) และงานสักลายเส้นโดยเฉพาะ ให้ความแม่นยำและปลอดภัยสูงสุด</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- TATTOO REMOVAL -->
+<section id="removal" class="py-24 relative">
+<div class="glow-orb right-0 top-0"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Tattoo Removal</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">ลบรอยสัก — Etalon Mix</h2></div>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="fade-left">
+<h3 class="text-2xl font-playfair font-semibold mb-6">Etalon Mix Remover</h3>
+<p class="text-gray-300 leading-relaxed mb-4">The Etalon Mix remover is for professional use only. After completing a training course, you can use it responsibly. You can use this remover during your pigmentation to correct imperfections or lighten unsightly PMU without any negative effects.</p>
+<p class="text-gray-400 leading-relaxed mb-6">ผลิตภัณฑ์ Etalon Mix Remover เหมาะสำหรับใช้โดยผู้เชี่ยวชาญเท่านั้น หลังจากผ่านการอบรมคอร์สแล้วจึงจะสามารถใช้งานได้อย่างถูกต้อง คุณสามารถใช้รีมูฟเวอร์นี้ระหว่างการฝังสีเพื่อแก้ไขข้อบกพร่อง หรือเพื่อลดความเข้มของงานสักถาวร</p>
+<a href="#booking" class="btn-accent text-sm"><i class="fas fa-calendar mr-2"></i>สอบถามเพิ่มเติม</a>
+</div>
+<div class="grid grid-cols-3 gap-4 fade-right">
+<img src="images/tattoo-removal.png" alt="Etalon Mix 1" class="rounded-2xl w-full h-48 object-cover border border-white/10">
+<img src="images/tattoo-removal.png" alt="Etalon Mix 2" class="rounded-2xl w-full h-48 object-cover border border-white/10 mt-8">
+<img src="images/tattoo-removal.png" alt="Etalon Mix 3" class="rounded-2xl w-full h-48 object-cover border border-white/10">
+</div>
+</div>
+</div>
+</section>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- COURSE -->
+<section id="course" class="py-24 relative">
+<div class="glow-orb left-0 bottom-0"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-12"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">🧑🏻‍🎨 Training Course</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">คลาสเรียน PMU</h2></div>
+<!-- Tabs -->
+<div class="flex justify-center gap-3 mb-10 flex-wrap fade-up delay-2">
+<button class="course-tab tab-active px-6 py-3 rounded-full text-sm font-semibold border border-white/10 transition-all" data-tab="tab-en">English</button>
+<button class="course-tab px-6 py-3 rounded-full text-sm font-semibold border border-white/10 bg-white/5 transition-all hover:bg-white/10" data-tab="tab-th">ภาษาไทย</button>
+</div>
+<!-- English Panel -->
+<div id="tab-en" class="course-panel card-luxury p-8 md:p-12 fade-up delay-3">
+<div class="grid md:grid-cols-2 gap-10">
+<div>
+<h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">What You'll Learn</h3>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Super Hairstroke techniques</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Natural PMU Safety</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Skin, Anatomy & Chemistry</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Pigmentology & Color Mixing</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Needle & Equipment Knowledge</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Shaping & Pre Drawing</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Melanin Color Theory</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>One on One Price Menu Coaching</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>After Care & Tips</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>A Live Model & Practice Evaluation</li>
+</ul>
+</div>
+<div>
+<h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">What You Get</h3>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Lifetime mentorship after training</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Professional training kit included</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Online home practices</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Certification at end of training</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Training Manual & Demo Models</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Lunch & Snacks provided</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Opportunity to work at Tim Eyebrow Studio</li>
+</ul>
+</div>
+</div>
+<div class="mt-10 p-6 rounded-2xl bg-white/5 border border-white/10">
+<h4 class="font-playfair font-bold text-lg mb-3">Before Booking</h4>
+<p class="text-gray-400 text-sm leading-relaxed mb-3">Fundamentals 5-day group training course is led by Master Tim in-person at Tim Eyebrow Studio. You'll receive expert guidance and intro into PMU Industry.</p>
+<p class="text-gray-400 text-sm leading-relaxed mb-3">Choose from five options and indicate preferred payment: Full Price or Deposit. Our team will reach out within 48 hours to coordinate your date.</p>
+<p class="text-accent-sec text-sm font-semibold">⚠️ All payments are non-refundable, only transferable up to 1 time with 14-day notice. Remaining balance for deposit option is due on first day of training.</p>
+</div>
+</div>
+<!-- Thai Panel -->
+<div id="tab-th" class="course-panel hidden card-luxury p-8 md:p-12 fade-up">
+<div class="grid md:grid-cols-2 gap-10">
+<div>
+<h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">สิ่งที่คุณจะได้เรียนรู้</h3>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>เทคนิค Super Hairstroke</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความปลอดภัยในการทำ PMU แบบธรรมชาติ</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความรู้ด้านผิวหนัง กายวิภาค และเคมี</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความรู้ด้านสี (Pigmentology) และการผสมสี</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความรู้เรื่องเข็มและอุปกรณ์</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>การออกแบบทรงคิ้วและการร่างโครง</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ทฤษฎีสีเมลานิน</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>การโค้ชส่วนตัวเรื่องการตั้งราคา</li>
+<li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>การดูแลหลังทำ เคล็ดลับต่างๆ</li>
+</ul>
+</div>
+<div>
+<h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">สิ่งที่คุณจะได้รับ</h3>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>การให้คำปรึกษาตลอดชีพหลังเรียนจบ</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>ชุดอุปกรณ์ฝึกอาชีพครบเซ็ต</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>การฝึกออนไลน์ที่บ้าน</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>ใบประกาศนียบัตรหลังจบอบรม</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>คู่มือการเรียน และโมเดลฝึกจริง</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>อาหารกลางวันและขนมว่าง</li>
+<li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>โอกาสทำงานที่ Tim Eyebrow Studio</li>
+</ul>
+</div>
+</div>
+<div class="mt-10 p-6 rounded-2xl bg-white/5 border border-white/10">
+<h4 class="font-playfair font-bold text-lg mb-3">ก่อนทำการจอง</h4>
+<p class="text-gray-400 text-sm leading-relaxed mb-3">หลักสูตรพื้นฐาน 5 วัน สอนโดย Master Tim แบบตัวต่อตัวที่สตูดิโอ คุณจะได้รับคำแนะนำอย่างมืออาชีพ เมื่อจบคอร์สคุณจะพร้อมเริ่มต้นอาชีพและนำทักษะไปใช้จริงได้ทันที</p>
+<p class="text-accent-sec text-sm font-semibold">⚠️ การชำระเงินทั้งหมดไม่สามารถคืนเงินได้ แต่สามารถเลื่อนเข้าคอร์สใหม่ได้ 1 ครั้ง โดยต้องแจ้งล่วงหน้าอย่างน้อย 14 วัน</p>
+</div>
+</div>
+<div class="text-center mt-10 fade-up"><a href="#booking" class="btn-accent text-lg"><i class="fas fa-graduation-cap mr-2"></i>สมัครคลาสเรียน</a></div>
+</div>
+</section>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- BEFORE & AFTER GALLERY -->
+<section id="gallery" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Before & After</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">ผลงานก่อน-หลัง</h2></div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="gallery-item fade-up delay-1"><img src="images/before-after-brows.png" alt="Before After Brows" class="w-full h-64 object-cover"><div class="overlay"><p class="text-white font-semibold text-sm">Hairstroke Brows</p></div></div>
+<div class="gallery-item fade-up delay-2"><img src="images/hero-beauty.png" alt="Soft Lips" class="w-full h-64 object-cover"><div class="overlay"><p class="text-white font-semibold text-sm">Soft Lips</p></div></div>
+<div class="gallery-item fade-up delay-3"><img src="images/equipment-flatlay.png" alt="Equipment" class="w-full h-64 object-cover"><div class="overlay"><p class="text-white font-semibold text-sm">Premium Equipment</p></div></div>
+<div class="gallery-item fade-up delay-4"><img src="images/tattoo-removal.png" alt="Eyeliner" class="w-full h-64 object-cover"><div class="overlay"><p class="text-white font-semibold text-sm">Eyeliner</p></div></div>
+<div class="gallery-item fade-up delay-5"><img src="images/training-course.png" alt="Training" class="w-full h-64 object-cover"><div class="overlay"><p class="text-white font-semibold text-sm">Training Course</p></div></div>
+<div class="gallery-item fade-up delay-6"><img src="images/before-after-brows.png" alt="Shading Brows" class="w-full h-64 object-cover"><div class="overlay"><p class="text-white font-semibold text-sm">Shading Brows</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="hidden fixed inset-0 z-[999] bg-black/90 items-center justify-center p-4">
+<button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl hover:text-accent-sec transition-colors"><i class="fas fa-times"></i></button>
+<img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] rounded-2xl object-contain">
+</div>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- CLIENT REVIEWS -->
+<section id="reviews" class="py-24 relative">
+<div class="glow-orb right-10 top-20"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Testimonials</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">รีวิวจากลูกค้า</h2></div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="testimonial-card fade-up delay-1">
+<div class="flex gap-1 mb-4 mt-6"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
+<p class="text-gray-300 text-sm leading-relaxed mb-6">"ทำสักคิ้ว Hairstroke กับ Master Tim ได้ผลลัพธ์ที่เป็นธรรมชาติมากๆ เส้นคิ้วคมชัดสวยเหมือนขนคิ้วจริง ประทับใจมากค่ะ"</p>
+<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent-sec font-bold">K</div><div><p class="font-semibold text-sm">Khun Koy</p><p class="text-gray-500 text-xs">Hairstroke Brows</p></div></div>
+</div>
+<div class="testimonial-card fade-up delay-2">
+<div class="flex gap-1 mb-4 mt-6"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
+<p class="text-gray-300 text-sm leading-relaxed mb-6">"Soft lips turned out perfectly! My lips look naturally pink now. The process was professional and almost painless. Highly recommend Tim Eyebrow Studio!"</p>
+<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent-sec font-bold">S</div><div><p class="font-semibold text-sm">Sarah M.</p><p class="text-gray-500 text-xs">Soft Lips</p></div></div>
+</div>
+<div class="testimonial-card fade-up delay-3">
+<div class="flex gap-1 mb-4 mt-6"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
+<p class="text-gray-300 text-sm leading-relaxed mb-6">"เรียนคอร์สสัก PMU กับ Master Tim 5 วัน ได้ความรู้เยอะมากๆ สอนละเอียดทุกขั้นตอน พร้อมอุปกรณ์ครบเซ็ต คุ้มมากค่ะ!"</p>
+<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent-sec font-bold">N</div><div><p class="font-semibold text-sm">Nong Nid</p><p class="text-gray-500 text-xs">PMU Training Course</p></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- ABOUT -->
+<section id="about" class="py-24 relative">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="fade-left">
+<img src="images/studio-interior.png" alt="Tim Eyebrow Studio" class="rounded-3xl w-full h-[500px] object-cover border border-white/10 shadow-2xl">
+</div>
+<div class="fade-right">
+<p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3">About Us</p>
+<h2 class="text-3xl md:text-5xl font-playfair font-bold mb-6">เกี่ยวกับ<br><span class="text-accent-sec">Tim Eyebrow Studio</span></h2>
+<p class="text-gray-300 leading-relaxed mb-4">ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
+<p class="text-gray-400 leading-relaxed mb-6">Master Tim มีประสบการณ์มากกว่า 8 ปี ในวงการ Permanent Makeup ใช้อุปกรณ์และสีระดับพรีเมียมจากเยอรมนีและอเมริกา เพื่อให้ลูกค้าได้รับผลลัพธ์ที่ดีที่สุด</p>
+<div class="flex flex-wrap gap-4">
+<div class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">8+</p><p class="text-gray-400 text-xs mt-1">ปีประสบการณ์</p></div>
+<div class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">5K+</p><p class="text-gray-400 text-xs mt-1">ลูกค้าที่ไว้วางใจ</p></div>
+<div class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">200+</p><p class="text-gray-400 text-xs mt-1">นักเรียนที่ผ่านอบรม</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- BOOKING -->
+<section id="booking" class="py-24 relative overflow-hidden">
+<div class="glow-orb left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]"></div>
+<div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+<p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Book Now</p>
+<h2 class="text-3xl md:text-5xl font-playfair font-bold section-title mb-4 fade-up delay-1">จองใช้บริการ</h2>
+<p class="text-gray-400 mb-12 max-w-xl mx-auto fade-up delay-2">เลือกช่องทางที่สะดวกสำหรับคุณ เพื่อนัดหมายหรือสอบถามรายละเอียดเพิ่มเติม</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
+<a href="https://wa.me/66842364956" target="_blank" class="social-booking-btn whatsapp fade-up delay-1"><i class="fab fa-whatsapp text-2xl"></i><span>WhatsApp</span></a>
+<a href="https://lin.ee/IjNi9e3" target="_blank" class="social-booking-btn line fade-up delay-2"><i class="fab fa-line text-2xl"></i><span>Line OA</span></a>
+<a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="social-booking-btn instagram fade-up delay-3"><i class="fab fa-instagram text-2xl"></i><span>Instagram</span></a>
+<a href="https://www.facebook.com/timeyebrowscenter" target="_blank" class="social-booking-btn facebook fade-up delay-4"><i class="fab fa-facebook text-2xl"></i><span>Facebook</span></a>
+<a href="https://www.tiktok.com/@timeyebrow" target="_blank" class="social-booking-btn tiktok fade-up delay-5"><i class="fab fa-tiktok text-2xl"></i><span>TikTok</span></a>
+</div>
+</div>
+</section>
+
+<hr class="section-divider max-w-7xl mx-auto">
+
+<!-- CONTACT & LOCATION -->
+<section id="contact" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Contact Us</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">ติดต่อเรา</h2></div>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="fade-left">
+<div class="card-luxury p-8">
+<h3 class="text-xl font-playfair font-semibold mb-6">📍 Location</h3>
+<p class="text-gray-300 leading-relaxed mb-2">Retro One Building, Soi Sutthisan 1</p>
+<p class="text-gray-300 leading-relaxed mb-6">Saphan Kwai, Bangkok, Thailand</p>
+<a href="https://maps.app.goo.gl/o1QZYGT3dxpRqfuq8" target="_blank" class="btn-accent text-sm inline-flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+<hr class="my-8 border-white/10">
+<h3 class="text-xl font-playfair font-semibold mb-4">📱 ช่องทางติดต่อ</h3>
+<div class="space-y-3">
+<a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-instagram text-lg w-6"></i>@tim_eyebrow</a>
+<a href="https://lin.ee/IjNi9e3" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-line text-lg w-6"></i>Line OA</a>
+<a href="https://wa.me/66842364956" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-whatsapp text-lg w-6"></i>+66 84 236 4956</a>
+<a href="https://www.facebook.com/timeyebrowscenter" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-facebook text-lg w-6"></i>Tim Eyebrows Center</a>
+<a href="https://www.tiktok.com/@timeyebrow" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-tiktok text-lg w-6"></i>@timeyebrow</a>
+</div>
+</div>
+</div>
+<div class="fade-right">
+<div class="map-container h-full min-h-[400px]">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2!2d100.5!3d13.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ4JzAwLjAiTiAxMDDCsDMwJzAwLjAiRQ!5e0!3m2!1sth!2sth!4v1700000000000!5m2!1sth!2sth" width="100%" height="100%" style="border:0; min-height:400px; border-radius:20px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</div>
+    </div> <!-- End main-content -->
+
+    <!-- SERVICE DETAIL VIEW -->
+    <section id="service-detail-view" class="hidden min-h-screen pt-32 pb-24 relative overflow-hidden">
+      <div class="glow-orb left-1/2 top-0 -translate-x-1/2 w-[600px] h-[600px]"></div>
+      <div class="max-w-5xl mx-auto px-6 relative z-10">
+        <button id="back-to-home" class="btn-outline mb-10 inline-flex items-center gap-2 px-6 py-2 text-sm rounded-full">
+          <i class="fas fa-arrow-left"></i> กลับสู่หน้าหลัก
+        </button>
+        <div class="fade-up visible">
+          <h1 id="service-detail-title" class="text-4xl md:text-6xl font-playfair font-bold mb-6 text-accent-sec">Title</h1>
+          <div id="service-detail-desc" class="text-gray-300 text-lg leading-relaxed mb-12 max-w-3xl whitespace-pre-line">
+            Description...
+          </div>
+          <div id="service-detail-images" class="columns-1 md:columns-2 gap-8 mt-12 pb-20 space-y-8">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 py-16">
+      <div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-10">
+<div class="md:col-span-2">
+<h3 class="text-2xl font-playfair font-bold mb-4">TIM <span class="text-accent-sec">EYEBROW</span> STUDIO</h3>
+<p class="text-gray-400 text-sm leading-relaxed max-w-md">ผู้เชี่ยวชาญด้าน Permanent Makeup ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
+<div class="flex gap-4 mt-6">
+<a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/timeyebrowscenter" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.tiktok.com/@timeyebrow" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-tiktok"></i></a>
+<a href="https://lin.ee/IjNi9e3" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-line"></i></a>
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+<ul class="space-y-2 text-gray-400 text-sm">
+<li><a href="#services" class="hover:text-accent-sec transition-colors">บริการ</a></li>
+<li><a href="#equipment" class="hover:text-accent-sec transition-colors">สีและอุปกรณ์</a></li>
+<li><a href="#removal" class="hover:text-accent-sec transition-colors">ลบรอยสัก</a></li>
+<li><a href="#course" class="hover:text-accent-sec transition-colors">คลาสเรียน</a></li>
+<li><a href="#gallery" class="hover:text-accent-sec transition-colors">ผลงาน</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+<ul class="space-y-2 text-gray-400 text-sm">
+<li>Retro One Building</li>
+<li>Soi Sutthisan 1, Saphan Kwai</li>
+<li>Bangkok, Thailand</li>
+<li class="mt-3"><a href="https://wa.me/66842364956" class="hover:text-accent-sec transition-colors">+66 84 236 4956</a></li>
+</ul>
+</div>
+</div>
+<hr class="my-10 border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+<p>&copy; 2026 Tim Eyebrow Studio. All rights reserved.</p>
+<p>Designed with <i class="fas fa-heart text-accent-sec"></i> for beauty</p>
+</div>
+</div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
