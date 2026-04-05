@@ -764,9 +764,9 @@ Usage and Maintenance
 สามารถสั่งซื้อเข็มสัก Vertix ได้จากร้านจำหน่ายอุปกรณ์สักที่เชื่อถือได้ / Vertix needles can be purchased from reputable PMU and tattoo suppliers:
 
 <div class="flex flex-wrap gap-4 mt-6">
-  <a href="https://www.pmusmpshop.com/%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%81-vertix-nano-%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87/?utm_source=chatgpt.com" target="_blank" class="btn-outline px-6 py-2 text-sm rounded-full flex items-center gap-2 transition-all hover:bg-white/10 hover:border-white/30 border border-white/10">PMU & SMP Shop</a>
-  <a href="https://www.darklab.com/collections/vertix?utm_source=chatgpt.com" target="_blank" class="btn-outline px-6 py-2 text-sm rounded-full flex items-center gap-2 transition-all hover:bg-white/10 hover:border-white/30 border border-white/10">Darklab</a>
-  <a href="https://www.fkirons.com/collections/vertix?utm_source=chatgpt.com" target="_blank" class="btn-outline px-6 py-2 text-sm rounded-full flex items-center gap-2 transition-all hover:bg-white/10 hover:border-white/30 border border-white/10">FK Irons</a>
+  <a href="https://www.pmusmpshop.com/%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2/%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%81-vertix-nano-%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87/?utm_source=chatgpt.com" target="_blank" class="btn-outline px-6 py-2 text-sm rounded-full flex items-center gap-2 transition-all">PMU & SMP Shop</a>
+  <a href="https://www.darklab.com/collections/vertix?utm_source=chatgpt.com" target="_blank" class="btn-outline px-6 py-2 text-sm rounded-full flex items-center gap-2 transition-all">Darklab</a>
+  <a href="https://www.fkirons.com/collections/vertix?utm_source=chatgpt.com" target="_blank" class="btn-outline px-6 py-2 text-sm rounded-full flex items-center gap-2 transition-all">FK Irons</a>
 </div>`,
       images: [
         "https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/Vertix1.png"
