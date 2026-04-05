@@ -16,7 +16,18 @@
             colors: {
               accent: "#8B1E2D",
               "accent-sec": "#B23A48",
-              dark: "#0F0F0F",
+              dark: "#FAF9F6",
+              gray: {
+                100: '#1a1a1a',
+                200: '#262626',
+                300: '#404040',
+                400: '#525252',
+                500: '#737373',
+                600: '#a3a3a3',
+                700: '#d4d4d4',
+                800: '#e5e5e5',
+                900: '#f5f5f5',
+              }
             },
             fontFamily: {
               playfair: ["Cormorant Garamond", "serif"],
@@ -204,9 +215,9 @@
           id="hamburger"
           class="hamburger lg:hidden flex flex-col gap-1.5 p-2"
         >
-          <span class="hamburger-line w-6 h-0.5 bg-white rounded-full"></span>
-          <span class="hamburger-line w-6 h-0.5 bg-white rounded-full"></span>
-          <span class="hamburger-line w-6 h-0.5 bg-white rounded-full"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-black rounded-full"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-black rounded-full"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-black rounded-full"></span>
         </button>
       </div>
       <!-- Mobile Menu -->
@@ -216,7 +227,7 @@
       >
         <div class="p-4 space-y-1">
           <button
-            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
             บริการ
             <i
@@ -266,7 +277,7 @@
             </div>
           </div>
           <button
-            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
             สีและอุปกรณ์
             <i
@@ -296,7 +307,7 @@
             >
           </div>
           <button
-            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
             ลบรอยสัก
             <i
@@ -312,11 +323,11 @@
           </div>
           <a
             href="#course"
-            class="block px-4 py-3 rounded-xl hover:bg-white/5 font-medium"
+            class="block px-4 py-3 rounded-xl hover:bg-black/5 font-medium"
             >คลาสเรียน</a
           >
           <button
-            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-white/5 flex justify-between items-center font-medium"
+            class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
             จองใช้บริการ
             <i
@@ -453,30 +464,69 @@
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Our Services</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">บริการของเรา</h2></div>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Hairstroke -->
-<div class="card-luxury p-8 fade-up delay-2 group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-white/5 transition-transform group-hover:scale-110"><i class="fas fa-pen-nib text-accent-sec text-xl"></i></div>
-<h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Hairstroke</h3>
-<p class="text-gray-400 text-sm leading-relaxed">เทคนิคการสักคิ้วลายเส้นด้วยเข็มนาโน วาดเส้นขนคิ้วทีละเส้นให้ดูเหมือนขนคิ้วจริง เพื่อสร้างมิติและความเป็นธรรมชาติ เหมาะสำหรับผู้ที่ต้องการเติมเต็มคิ้วบาง</p>
-</div>
-<!-- Shading -->
-<div class="card-luxury p-8 fade-up delay-4 group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-white/5 transition-transform group-hover:scale-110"><i class="fas fa-paint-brush text-accent-sec text-xl"></i></div>
-<h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Shading / Ombre Brows</h3>
-<p class="text-gray-400 text-sm leading-relaxed">เทคนิคสักคิ้วฝุ่นให้ลุคธรรมชาติ ดูนุ่มฟุ้งเหมือนเขียนคิ้วด้วยดินสอ เหมาะกับทุกเพศทุกวัย โดยเฉพาะคนที่ต้องการให้คิ้วดูมีมิติแต่ไม่แข็ง</p>
-</div>
-<!-- Lips -->
-<div class="card-luxury p-8 fade-up delay-6 group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-white/5 transition-transform group-hover:scale-110"><i class="fas fa-lips text-accent-sec text-xl">💋</i></div>
-<h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Soft Lips</h3>
-<p class="text-gray-400 text-sm leading-relaxed">ฝังสีปากกึ่งถาวร แก้ปัญหาสีปากคล้ำหรือซีดให้ดูอมชมพูอย่างเป็นธรรมชาติ สีฟุ้งเบลอคล้ายทาลิปสติกแบบเกาหลี บอบช้ำน้อย</p>
-</div>
-<!-- Eyeliner -->
-<div class="card-luxury p-8 fade-up delay-8 group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-white/5 transition-transform group-hover:scale-110"><i class="fas fa-eye text-accent-sec text-xl"></i></div>
-<h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Eyeliner</h3>
-<p class="text-gray-400 text-sm leading-relaxed">สักตา Eyeliner, Inner-liner (สักชิดโคนขนตาให้ดูธรรมชาติ) และ Soft liner (แรเงาฟุ้งเหมือนอายแชโดว์) ช่วยให้ดวงตาดูคมชัดโดยไม่ต้องแต่งตาทุกวัน</p>
-</div>
+  <!-- Hairstroke -->
+  <div class="card-luxury fade-up delay-2 group overflow-hidden">
+    <div class="w-full h-48 overflow-hidden">
+      <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/HOMEP100001.JPG"
+           alt="Hairstroke"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+    </div>
+    <div class="p-8">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-black/5 transition-transform group-hover:scale-110">
+        <i class="fas fa-pen-nib text-accent-sec text-xl"></i>
+      </div>
+      <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Hairstroke</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">เทคนิคการสักคิ้วลายเส้นด้วยเข็มนาโน วาดเส้นขนคิ้วทีละเส้นให้ดูเหมือนขนคิ้วจริง เพื่อสร้างมิติและความเป็นธรรมชาติ เหมาะสำหรับผู้ที่ต้องการเติมเต็มคิ้วบาง</p>
+    </div>
+  </div>
+
+  <!-- Shading -->
+  <div class="card-luxury fade-up delay-4 group overflow-hidden">
+    <div class="w-full h-48 overflow-hidden">
+      <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/HOMEP2.jpg"
+           alt="Shading / Ombre Brows"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+    </div>
+    <div class="p-8">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-black/5 transition-transform group-hover:scale-110">
+        <i class="fas fa-paint-brush text-accent-sec text-xl"></i>
+      </div>
+      <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Shading / Ombre Brows</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">เทคนิคสักคิ้วฝุ่นให้ลุคธรรมชาติ ดูนุ่มฟุ้งเหมือนเขียนคิ้วด้วยดินสอ เหมาะกับทุกเพศทุกวัย โดยเฉพาะคนที่ต้องการให้คิ้วดูมีมิติแต่ไม่แข็ง</p>
+    </div>
+  </div>
+
+  <!-- Soft Lips -->
+  <div class="card-luxury fade-up delay-6 group overflow-hidden">
+    <div class="w-full h-48 overflow-hidden">
+      <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/HOMEP3.JPG"
+           alt="Soft Lips"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+    </div>
+    <div class="p-8">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-black/5 transition-transform group-hover:scale-110">
+        <span class="text-xl">💋</span>
+      </div>
+      <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Soft Lips</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">ฝังสีปากกึ่งถาวร แก้ปัญหาสีปากคล้ำหรือซีดให้ดูอมชมพูอย่างเป็นธรรมชาติ สีฟุ้งเบลอคล้ายทาลิปสติกแบบเกาหลี บอบช้ำน้อย</p>
+    </div>
+  </div>
+
+  <!-- Eyeliner -->
+  <div class="card-luxury fade-up delay-8 group overflow-hidden">
+    <div class="w-full h-48 overflow-hidden">
+      <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/HOMEP4.JPG"
+           alt="Eyeliner"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+    </div>
+    <div class="p-8">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-transparent flex items-center justify-center mb-5 border border-black/5 transition-transform group-hover:scale-110">
+        <i class="fas fa-eye text-accent-sec text-xl"></i>
+      </div>
+      <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Eyeliner</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">สักตา Eyeliner, Inner-liner (สักชิดโคนขนตาให้ดูธรรมชาติ) และ Soft liner (แรเงาฟุ้งเหมือนอายแชโดว์) ช่วยให้ดวงตาดูคมชัดโดยไม่ต้องแต่งตาทุกวัน</p>
+    </div>
+  </div>
 </div>
 </div>
 </section>
@@ -488,26 +538,77 @@
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Colors & Equipment</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">สีและอุปกรณ์ระดับพรีเมียม</h2></div>
 <div class="grid md:grid-cols-2 gap-8">
-<!-- Labina -->
-<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-1">
-<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">Germany</span><h3 class="text-2xl font-playfair font-bold mt-4">LaBina®</h3></div></div>
-<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">High-quality pigment inks with impressive range of shades. No chemical preservatives, without iron oxide. Made in Germany with 35+ years of experience. All colours are REACH compliant.</p></div>
-</div>
-<!-- Mara Pro -->
-<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-2">
-<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">USA</span><h3 class="text-2xl font-playfair font-bold mt-4">MARA Pro</h3></div></div>
-<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">Hybrid formula pigment inks for PMU — lips, brows, eyes. Very fine particles for good color diffusion. Cruelty-free, environmentally friendly, with MSDS available for each shade.</p></div>
-</div>
-<!-- Xion S -->
-<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-3">
-<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">USA</span><h3 class="text-2xl font-playfair font-bold mt-4">Spektra Xion S</h3></div></div>
-<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">Premium pen-style rotary machine by Microbeau International. Designed specifically for PMU and cosmetic tattooing — precision, versatility, and comfort for professionals.</p></div>
-</div>
-<!-- Vertix -->
-<div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-4">
-<div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center"><div class="text-center"><span class="equipment-badge mb-3 inline-block">Professional</span><h3 class="text-2xl font-playfair font-bold mt-4">Vertix Needle</h3></div></div>
-<div class="md:w-3/5 p-6"><p class="text-gray-400 text-sm leading-relaxed">เข็มสักแบบแคร์ทริดจ์ออกแบบเพื่อ Permanent Makeup (PMU) และงานสักลายเส้นโดยเฉพาะ ให้ความแม่นยำและปลอดภัยสูงสุด</p></div>
-</div>
+  <!-- LaBina -->
+  <div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-1">
+    <div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center">
+      <div class="text-center">
+        <span class="equipment-badge mb-3 inline-block">Germany</span>
+        <h3 class="text-2xl font-playfair font-bold mt-4">LaBina®</h3>
+      </div>
+    </div>
+    <div class="md:w-3/5 p-6 flex flex-col justify-between gap-5">
+      <p class="text-gray-400 text-sm leading-relaxed z-10">High-quality pigment inks with impressive range of shades. No chemical preservatives, without iron oxide. Made in Germany with 35+ years of experience. All colours are REACH compliant.</p>
+      <div class="equipment-img-wrapper h-48 w-full mt-2">
+        <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/LaBina1.png"
+             alt="LaBina"
+             class="w-full h-full object-contain" />
+      </div>
+    </div>
+  </div>
+
+  <!-- MARA Pro -->
+  <div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-2">
+    <div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center">
+      <div class="text-center">
+        <span class="equipment-badge mb-3 inline-block">USA</span>
+        <h3 class="text-2xl font-playfair font-bold mt-4">MARA Pro</h3>
+      </div>
+    </div>
+    <div class="md:w-3/5 p-6 flex flex-col justify-between gap-5">
+      <p class="text-gray-400 text-sm leading-relaxed z-10">Hybrid formula pigment inks for PMU — lips, brows, eyes. Very fine particles for good color diffusion. Cruelty-free, environmentally friendly, with MSDS available for each shade.</p>
+      <div class="equipment-img-wrapper h-48 w-full mt-2">
+        <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/MARA-Pro1.png"
+             alt="MARA Pro"
+             class="w-full h-full object-contain" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Spektra Xion S -->
+  <div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-3">
+    <div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center">
+      <div class="text-center">
+        <span class="equipment-badge mb-3 inline-block">USA</span>
+        <h3 class="text-2xl font-playfair font-bold mt-4">Spektra Xion S</h3>
+      </div>
+    </div>
+    <div class="md:w-3/5 p-6 flex flex-col justify-between gap-5">
+      <p class="text-gray-400 text-sm leading-relaxed z-10">Premium pen-style rotary machine by Microbeau International. Designed specifically for PMU and cosmetic tattooing — precision, versatility, and comfort for professionals.</p>
+      <div class="equipment-img-wrapper h-48 w-full mt-2">
+        <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/The-Spektra-Xion-S1.png"
+             alt="Spektra Xion S"
+             class="w-full h-full object-contain" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Vertix Needle -->
+  <div class="card-luxury flex flex-col md:flex-row overflow-hidden fade-up delay-4">
+    <div class="md:w-2/5 bg-gradient-to-br from-accent/20 to-transparent p-8 flex items-center justify-center">
+      <div class="text-center">
+        <span class="equipment-badge mb-3 inline-block">Professional</span>
+        <h3 class="text-2xl font-playfair font-bold mt-4">Vertix Needle</h3>
+      </div>
+    </div>
+    <div class="md:w-3/5 p-6 flex flex-col justify-between gap-5">
+      <p class="text-gray-400 text-sm leading-relaxed z-10">เข็มสักแบบแคร์ทริดจ์ออกแบบเพื่อ Permanent Makeup (PMU) และงานสักลายเส้นโดยเฉพาะ ให้ความแม่นยำและปลอดภัยสูงสุด</p>
+      <div class="equipment-img-wrapper h-48 w-full mt-2">
+        <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/Vertix1.png"
+             alt="Vertix Needle"
+             class="w-full h-full object-contain" />
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 </section>
@@ -527,7 +628,7 @@
 <a href="#booking" class="btn-accent text-sm"><i class="fas fa-calendar mr-2"></i>สอบถามเพิ่มเติม</a>
 </div>
 <div class="fade-right">
-<img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/The-Etalon-Mix-remover1.png" alt="Etalon Mix" class="rounded-3xl w-full h-auto object-cover border border-white/10 shadow-2xl">
+<img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/The-Etalon-Mix-remover1.png" alt="Etalon Mix" class="rounded-3xl w-full h-auto object-cover border border-black/10 shadow-2xl">
 </div>
 </div>
 </div>
@@ -550,7 +651,7 @@
 </section>
 
 <!-- Lightbox -->
-<div id="lightbox" class="hidden fixed inset-0 z-[999] bg-black/90 items-center justify-center p-4">
+<div id="lightbox" class="hidden fixed inset-0 z-[999] bg-[#FAF9F6]/90 items-center justify-center p-4">
 <button id="lightbox-close" class="absolute top-6 right-6 text-white text-3xl hover:text-accent-sec transition-colors"><i class="fas fa-times"></i></button>
 <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] rounded-2xl object-contain">
 </div>
@@ -566,17 +667,17 @@
 <div class="testimonial-card fade-up delay-2">
 <div class="flex gap-1 mb-6 mt-2"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
 <p class="text-gray-300 text-sm leading-relaxed mb-8">"ทำสักคิ้ว Hairstroke กับ Master Tim ได้ผลลัพธ์ที่เป็นธรรมชาติมากๆ เส้นคิ้วคมชัดสวยเหมือนขนคิ้วจริง ประทับใจมากค่ะ"</p>
-<div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-white/10">K</div><div><p class="font-semibold text-sm">Khun Koy</p><p class="text-gray-500 text-xs mt-0.5">Hairstroke Brows</p></div></div>
+<div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-black/10">K</div><div><p class="font-semibold text-sm">Khun Koy</p><p class="text-gray-500 text-xs mt-0.5">Hairstroke Brows</p></div></div>
 </div>
 <div class="testimonial-card fade-up delay-4">
 <div class="flex gap-1 mb-6 mt-2"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
 <p class="text-gray-300 text-sm leading-relaxed mb-8">"Soft lips turned out perfectly! My lips look naturally pink now. The process was professional and almost painless. Highly recommend Tim Eyebrow Studio!"</p>
-<div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-white/10">S</div><div><p class="font-semibold text-sm">Sarah M.</p><p class="text-gray-500 text-xs mt-0.5">Soft Lips</p></div></div>
+<div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-black/10">S</div><div><p class="font-semibold text-sm">Sarah M.</p><p class="text-gray-500 text-xs mt-0.5">Soft Lips</p></div></div>
 </div>
 <div class="testimonial-card fade-up delay-6">
 <div class="flex gap-1 mb-6 mt-2"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
 <p class="text-gray-300 text-sm leading-relaxed mb-8">"เรียนคอร์สสัก PMU กับ Master Tim 5 วัน ได้ความรู้เยอะมากๆ สอนละเอียดทุกขั้นตอน พร้อมอุปกรณ์ครบเซ็ต คุ้มมากค่ะ!"</p>
-<div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-white/10">N</div><div><p class="font-semibold text-sm">Nong Nid</p><p class="text-gray-500 text-xs mt-0.5">PMU Training Course</p></div></div>
+<div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-black/10">N</div><div><p class="font-semibold text-sm">Nong Nid</p><p class="text-gray-500 text-xs mt-0.5">PMU Training Course</p></div></div>
 </div>
 </div>
 </div>
@@ -589,7 +690,7 @@
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid md:grid-cols-2 gap-16 items-center">
 <div class="fade-left">
-<img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/HOME00005.png" alt="Tim Eyebrow Studio" class="rounded-3xl w-full h-[500px] object-cover border border-white/10 shadow-2xl">
+<img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/HOME00005.png" alt="Tim Eyebrow Studio" class="rounded-3xl w-full h-[500px] object-cover border border-black/10 shadow-2xl">
 </div>
 <div class="fade-right">
 <p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3">About Us</p>
@@ -597,9 +698,9 @@
 <p class="text-gray-300 leading-relaxed mb-4">ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
 <p class="text-gray-400 leading-relaxed mb-6">Master Tim มีประสบการณ์มากกว่า 8 ปี ในวงการ Permanent Makeup ใช้อุปกรณ์และสีระดับพรีเมียมจากเยอรมนีและอเมริกา เพื่อให้ลูกค้าได้รับผลลัพธ์ที่ดีที่สุด</p>
 <div class="flex flex-wrap gap-4">
-<div class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">8+</p><p class="text-gray-400 text-xs mt-1">ปีประสบการณ์</p></div>
-<div class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">5K+</p><p class="text-gray-400 text-xs mt-1">ลูกค้าที่ไว้วางใจ</p></div>
-<div class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">200+</p><p class="text-gray-400 text-xs mt-1">นักเรียนที่ผ่านอบรม</p></div>
+<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">8+</p><p class="text-gray-400 text-xs mt-1">ปีประสบการณ์</p></div>
+<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">5K+</p><p class="text-gray-400 text-xs mt-1">ลูกค้าที่ไว้วางใจ</p></div>
+<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">200+</p><p class="text-gray-400 text-xs mt-1">นักเรียนที่ผ่านอบรม</p></div>
 </div>
 </div>
 </div>
@@ -638,7 +739,7 @@
 <p class="text-gray-300 leading-relaxed mb-2">Retro One Building, Soi Sutthisan 1</p>
 <p class="text-gray-300 leading-relaxed mb-6">Saphan Kwai, Bangkok, Thailand</p>
 <a href="https://maps.app.goo.gl/o1QZYGT3dxpRqfuq8" target="_blank" class="btn-accent text-sm inline-flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
-<hr class="my-8 border-white/10">
+<hr class="my-8 border-black/10">
 <h3 class="text-xl font-playfair font-semibold mb-4">📱 ช่องทางติดต่อ</h3>
 <div class="space-y-3">
 <a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-instagram text-lg w-6"></i>@tim_eyebrow</a>
@@ -689,8 +790,8 @@
         <div class="text-center mb-12"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3">🧑🏻‍🎨 Training Course</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title">คลาสเรียน PMU</h2></div>
         <!-- Tabs -->
         <div class="flex justify-center gap-3 mb-10 flex-wrap">
-        <button class="course-tab tab-active px-6 py-3 rounded-full text-sm font-semibold border border-white/10 transition-all" data-tab="tab-en">English</button>
-        <button class="course-tab px-6 py-3 rounded-full text-sm font-semibold border border-white/10 bg-white/5 transition-all hover:bg-white/10" data-tab="tab-th">ภาษาไทย</button>
+        <button class="course-tab tab-active px-6 py-3 rounded-full text-sm font-semibold border border-black/10 transition-all" data-tab="tab-en">English</button>
+        <button class="course-tab px-6 py-3 rounded-full text-sm font-semibold border border-black/10 bg-black/5 transition-all hover:bg-black/10" data-tab="tab-th">ภาษาไทย</button>
         </div>
         <!-- English Panel -->
         <div id="tab-en" class="course-panel card-luxury p-8 md:p-12">
@@ -723,7 +824,7 @@
         </ul>
         </div>
         </div>
-        <div class="mt-10 p-6 rounded-2xl bg-white/5 border border-white/10">
+        <div class="mt-10 p-6 rounded-2xl bg-black/5 border border-black/10">
         <h4 class="font-playfair font-bold text-lg mb-3">Before Booking</h4>
         <p class="text-gray-400 text-sm leading-relaxed mb-3">Fundamentals 5-day group training course is led by Master Tim in-person at Tim Eyebrow Studio. You'll receive expert guidance and intro into PMU Industry.</p>
         <p class="text-gray-400 text-sm leading-relaxed mb-3">Choose from five options and indicate preferred payment: Full Price or Deposit. Our team will reach out within 48 hours to coordinate your date.</p>
@@ -760,7 +861,7 @@
         </ul>
         </div>
         </div>
-        <div class="mt-10 p-6 rounded-2xl bg-white/5 border border-white/10">
+        <div class="mt-10 p-6 rounded-2xl bg-black/5 border border-black/10">
         <h4 class="font-playfair font-bold text-lg mb-3">ก่อนทำการจอง</h4>
         <p class="text-gray-400 text-sm leading-relaxed mb-3">หลักสูตรพื้นฐาน 5 วัน สอนโดย Master Tim แบบตัวต่อตัวที่สตูดิโอ คุณจะได้รับคำแนะนำอย่างมืออาชีพ เมื่อจบคอร์สคุณจะพร้อมเริ่มต้นอาชีพและนำทักษะไปใช้จริงได้ทันที</p>
         <p class="text-accent-sec text-sm font-semibold">⚠️ การชำระเงินทั้งหมดไม่สามารถคืนเงินได้ แต่สามารถเลื่อนเข้าคอร์สใหม่ได้ 1 ครั้ง โดยต้องแจ้งล่วงหน้าอย่างน้อย 14 วัน</p>
@@ -783,12 +884,12 @@
             <p>Tim Eyebrow Studio ให้ความสำคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณเป็นอย่างยิ่ง นโยบายฉบับนี้จัดทำขึ้นเพื่อชี้แจงรายละเอียดเกี่ยวกับการจัดเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของคุณ เพื่อสร้างความมั่นใจในการใช้บริการของเรา</p>
             
             <div>
-              <h3 class="text-xl font-playfair font-bold text-white mb-3">1. ข้อมูลส่วนบุคคลที่เราจัดเก็บ</h3>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">1. ข้อมูลส่วนบุคคลที่เราจัดเก็บ</h3>
               <p class="text-gray-400">เราอาจรวบรวมข้อมูลส่วนบุคคลที่จำเป็นสำหรับการให้บริการ เช่น ชื่อ-นามสกุล เบอร์โทรศัพท์ อีเมล ประวัติการรับบริการ อาการแพ้ข้อมูลทางสุขภาพเบื้องต้น และข้อมูลการโต้ตอบหรือการนัดหมายผ่านช่องทาง Social Media ต่างๆ</p>
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-white mb-3">2. วัตถุประสงค์ในการใช้ข้อมูล</h3>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">2. วัตถุประสงค์ในการใช้ข้อมูล</h3>
               <ul class="list-disc pl-5 text-gray-400 space-y-1 mt-2">
                 <li>เพื่อยืนยันตัวตน นัดหมาย และให้บริการด้าน Permanent Makeup อย่างปลอดภัย</li>
                 <li>เพื่อใช้ติตต่อประสานงาน ติดตามผลหลังการรับบริการ</li>
@@ -798,17 +899,17 @@
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-white mb-3">3. การจัดการคุกกี้ (Cookies)</h3>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">3. การจัดการคุกกี้ (Cookies)</h3>
               <p class="text-gray-400">เว็บไซต์ของเรามีการใช้งานคุกกี้ (Cookies) เพื่อวิเคราะห์ปริมาณการเข้าชม และบันทึกพฤติกรรมการใช้งานบนเว็บไซต์ เพื่อพัฒนาและมอบประสบการณ์ที่ดีที่สุดให้แก่คุณ คุณสามารถเลือก <strong>"ยอมรับ"</strong> หรือ <strong>"ปฏิเสธ"</strong> การใช้งานคุกกี้ที่ไม่จำเป็นได้จากแถบตั้งค่าคุกกี้ด้านล่าง</p>
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-white mb-3">4. การเปิดเผยข้อมูล</h3>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">4. การเปิดเผยข้อมูล</h3>
               <p class="text-gray-400">ข้อมูลของคุณจะถูกเก็บรักษาเป็นความลับอย่างสูงสุด เราจะไม่ขาย แลกเปลี่ยน หรือเปิดเผยข้อมูลส่วนบุคคลของคุณแก่บุคคลที่สาม เว้นแต่จะได้รับความยินยอมจากคุณ หรือเป็นการปฏิบัติตามกฎหมายที่เกี่ยวข้อง</p>
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-white mb-3">5. สิทธิของเจ้าของข้อมูล</h3>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">5. สิทธิของเจ้าของข้อมูล</h3>
               <p class="text-gray-400">คุณมีสิทธิในการขอเข้าถึง ขอแก้ไข หรือขอลบข้อมูลส่วนบุคคลของคุณที่อยู่ในการดูแลของเราได้ตลอดเวลา โดยสามารถติดต่อผ่านช่องทาง Official Line หรือเบอร์โทรศัพท์ที่แสดงบนหน้าเว็บไซต์</p>
             </div>
           </div>
@@ -817,17 +918,17 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="border-t border-white/10 py-16">
+    <footer class="border-t border-black/10 py-16">
       <div class="max-w-7xl mx-auto px-6">
 <div class="grid md:grid-cols-4 gap-10">
 <div class="md:col-span-2">
 <h3 class="text-2xl font-playfair font-bold mb-4">TIM <span class="text-accent-sec">EYEBROW</span> STUDIO</h3>
 <p class="text-gray-400 text-sm leading-relaxed max-w-md">ผู้เชี่ยวชาญด้าน Permanent Makeup ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
 <div class="flex gap-4 mt-6">
-<a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-instagram"></i></a>
-<a href="https://www.facebook.com/timeyebrowscenter" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-facebook-f"></i></a>
-<a href="https://www.tiktok.com/@timeyebrow" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-tiktok"></i></a>
-<a href="https://lin.ee/IjNi9e3" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-line"></i></a>
+<a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/timeyebrowscenter" target="_blank" class="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.tiktok.com/@timeyebrow" target="_blank" class="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-tiktok"></i></a>
+<a href="https://lin.ee/IjNi9e3" target="_blank" class="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-line"></i></a>
 </div>
 </div>
 <div>
@@ -850,7 +951,7 @@
 </ul>
 </div>
 </div>
-<hr class="my-10 border-white/10">
+<hr class="my-10 border-black/10">
 <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
 <p>&copy; 2026 Tim Eyebrow Studio. All rights reserved.</p>
 <p>Designed with <i class="fas fa-heart text-accent-sec"></i> for beauty</p>
@@ -858,13 +959,13 @@
 </div>
 </footer>
     <!-- COOKIE BANNER -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] bg-dark/95 backdrop-blur-md border-t border-white/10 p-4 md:p-6 translate-y-full transition-transform duration-500 ease-out flex flex-col md:flex-row items-center justify-between gap-4">
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] bg-dark/95 backdrop-blur-md border-t border-black/10 p-4 md:p-6 translate-y-full transition-transform duration-500 ease-out flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="text-sm text-gray-300 max-w-4xl leading-relaxed">
         เว็บไซต์นี้ใช้คุกกี้เพื่อวัตถุประสงค์ในการปรับปรุงประสบการณ์ของผู้ใช้ให้ดียิ่งขึ้น 
         <a href="#privacy-policy" id="read-policy-link" class="text-accent hover:text-accent-sec underline transition-colors ml-1">อ่านข้อมูลเพิ่มเติม</a>
       </div>
       <div class="flex gap-3 whitespace-nowrap">
-        <button id="reject-cookies" class="px-4 py-2 text-sm font-semibold text-gray-400 hover:text-white transition-colors magnetic">ปฏิเสธ</button>
+        <button id="reject-cookies" class="px-4 py-2 text-sm font-semibold text-gray-400 hover:text-gray-100 transition-colors magnetic">ปฏิเสธ</button>
         <button id="accept-cookies" class="btn-accent py-2 px-6 text-sm magnetic">ยอมรับ</button>
       </div>
     </div>
