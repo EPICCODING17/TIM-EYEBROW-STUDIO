@@ -62,7 +62,7 @@
             <a
               href="#services"
               class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
-              >บริการ
+              ><span data-th="บริการ" data-en="Services">บริการ</span>
               <i
                 class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
               ></i
@@ -115,7 +115,7 @@
             <a
               href="#equipment"
               class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
-              >สีและอุปกรณ์
+              ><span data-th="สีและอุปกรณ์" data-en="Equipment">สีและอุปกรณ์</span>
               <i
                 class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
               ></i
@@ -147,7 +147,7 @@
             <a
               href="#removal"
               class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
-              >ลบรอยสัก
+              ><span data-th="ลบรอยสัก" data-en="Tattoo Removal">ลบรอยสัก</span>
               <i
                 class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
               ></i
@@ -164,6 +164,7 @@
             <a
               href="#course"
               class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors"
+              data-th="คลาสเรียน" data-en="Courses"
               >คลาสเรียน</a
             >
           </li>
@@ -171,7 +172,7 @@
             <a
               href="#booking"
               class="nav-link px-4 py-2 rounded-xl text-sm font-medium hover:text-accent-sec transition-colors flex items-center gap-1"
-              >จองใช้บริการ
+              ><span data-th="จองใช้บริการ" data-en="Book Now">จองใช้บริการ</span>
               <i
                 class="fas fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"
               ></i
@@ -201,13 +202,13 @@
                 class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
                 ><i class="fab fa-facebook mr-2"></i>Facebook</a
               >
-              <a
-                href="https://www.tiktok.com/@timeyebrow"
-                target="_blank"
-                class="dropdown-item block px-4 py-2.5 rounded-lg text-sm"
-                ><i class="fab fa-tiktok mr-2"></i>TikTok</a
-              >
             </div>
+          </li>
+          <li class="pl-2 border-l border-black/10 ml-2">
+            <button onclick="toggleLanguage()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:bg-black/5 transition-colors text-sm font-semibold text-black">
+              <i class="fas fa-globe"></i>
+              <span class="current-lang-display">EN</span>
+            </button>
           </li>
         </ul>
         <!-- Hamburger -->
@@ -229,7 +230,7 @@
           <button
             class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
-            บริการ
+            <span data-th="บริการ" data-en="Services">บริการ</span>
             <i
               class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
             ></i>
@@ -279,7 +280,7 @@
           <button
             class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
-            สีและอุปกรณ์
+            <span data-th="สีและอุปกรณ์" data-en="Equipment">สีและอุปกรณ์</span>
             <i
               class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
             ></i>
@@ -309,7 +310,7 @@
           <button
             class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
-            ลบรอยสัก
+            <span data-th="ลบรอยสัก" data-en="Tattoo Removal">ลบรอยสัก</span>
             <i
               class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
             ></i>
@@ -324,12 +325,13 @@
           <a
             href="#course"
             class="block px-4 py-3 rounded-xl hover:bg-black/5 font-medium"
+            data-th="คลาสเรียน" data-en="Courses"
             >คลาสเรียน</a
           >
           <button
             class="mobile-dropdown-toggle w-full text-left px-4 py-3 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium"
           >
-            จองใช้บริการ
+            <span data-th="จองใช้บริการ" data-en="Book Now">จองใช้บริการ</span>
             <i
               class="mobile-arrow fas fa-chevron-down text-xs transition-transform duration-300"
             ></i>
@@ -366,6 +368,10 @@
               ><i class="fab fa-tiktok mr-2"></i>TikTok</a
             >
           </div>
+          <button onclick="toggleLanguage()" class="w-full text-left px-4 py-3 mt-2 rounded-xl hover:bg-black/5 flex justify-between items-center font-medium border-t border-black/5">
+            <span class="flex items-center gap-2"><i class="fas fa-globe"></i> Language</span>
+            <span class="current-lang-display px-3 py-1 bg-black/5 rounded-md text-xs">EN</span>
+          </button>
         </div>
       </div>
     </nav>
@@ -412,18 +418,21 @@
           </h1>
           <p
             class="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 fade-up delay-2"
+            data-th="ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง" 
+            data-en="Expert in correcting sparse brows, short tails, and shapeless brows"
           >
             ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง
           </p>
-          <p class="text-gray-400 mb-8 fade-up delay-3">
-            ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง
-            เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ
+          <p class="text-gray-400 mb-8 fade-up delay-3"
+             data-th="ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ" 
+             data-en="Correct dark or pale lips using advanced artistic techniques for beautiful and natural results.">
+            ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ
           </p>
           <div class="flex flex-wrap gap-4 fade-up delay-4">
             <a href="#booking" class="btn-accent pulse-glow magnetic"
-              ><i class="fas fa-calendar-check mr-2"></i>Book Appointment</a
+              ><i class="fas fa-calendar-check mr-2"></i><span data-th="จองใช้บริการ" data-en="Book Appointment">Book Appointment</span></a
             >
-            <a href="#services" class="btn-outline magnetic">Our Services</a>
+            <a href="#services" class="btn-outline magnetic" data-th="บริการของเรา" data-en="Our Services">Our Services</a>
           </div>
         </div>
       </div>
@@ -462,7 +471,7 @@
 <section id="services" class="py-24 relative">
 <div class="glow-orb -left-40 top-20"></div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Our Services</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">บริการของเรา</h2></div>
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Our Services</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1" data-th="บริการของเรา" data-en="Our Services">บริการของเรา</h2></div>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
   <!-- Hairstroke -->
   <div class="flex flex-col fade-up delay-2 group relative pt-4">
@@ -476,7 +485,7 @@
         <i class="fas fa-pen-nib text-accent-sec text-lg"></i>
       </div>
       <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Hairstroke</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">เทคนิคการสักคิ้วลายเส้นด้วยเข็มนาโน วาดเส้นขนคิ้วทีละเส้นให้ดูเหมือนขนคิ้วจริง เพื่อสร้างมิติและความเป็นธรรมชาติ เหมาะสำหรับผู้ที่ต้องการเติมเต็มคิ้วบาง</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="เทคนิคการสักคิ้วลายเส้นด้วยเข็มนาโน วาดเส้นขนคิ้วทีละเส้นให้ดูเหมือนขนคิ้วจริง เพื่อสร้างมิติและความเป็นธรรมชาติ เหมาะสำหรับผู้ที่ต้องการเติมเต็มคิ้วบาง" data-en="Nano needle hair-stroke technique, drawing individual hairs to look incredibly realistic. Creates natural dimension, perfect for naturally filling in sparse brows.">เทคนิคการสักคิ้วลายเส้นด้วยเข็มนาโน วาดเส้นขนคิ้วทีละเส้นให้ดูเหมือนขนคิ้วจริง เพื่อสร้างมิติและความเป็นธรรมชาติ เหมาะสำหรับผู้ที่ต้องการเติมเต็มคิ้วบาง</p>
     </div>
   </div>
 
@@ -492,7 +501,7 @@
         <i class="fas fa-paint-brush text-accent-sec text-lg"></i>
       </div>
       <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Shading / Ombre Brows</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">เทคนิคสักคิ้วฝุ่นให้ลุคธรรมชาติ ดูนุ่มฟุ้งเหมือนเขียนคิ้วด้วยดินสอ เหมาะกับทุกเพศทุกวัย โดยเฉพาะคนที่ต้องการให้คิ้วดูมีมิติแต่ไม่แข็ง</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="เทคนิคสักคิ้วฝุ่นให้ลุคธรรมชาติ ดูนุ่มฟุ้งเหมือนเขียนคิ้วด้วยดินสอ เหมาะกับทุกเพศทุกวัย โดยเฉพาะคนที่ต้องการให้คิ้วดูมีมิติแต่ไม่แข็ง" data-en="Powder brow technique for a natural, soft-focus look similar to pencil shading. Suitable for all ages and genders, especially for those wanting dimension without harsh edges.">เทคนิคสักคิ้วฝุ่นให้ลุคธรรมชาติ ดูนุ่มฟุ้งเหมือนเขียนคิ้วด้วยดินสอ เหมาะกับทุกเพศทุกวัย โดยเฉพาะคนที่ต้องการให้คิ้วดูมีมิติแต่ไม่แข็ง</p>
     </div>
   </div>
 
@@ -508,7 +517,7 @@
         <span class="text-xl">💋</span>
       </div>
       <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Soft Lips</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">ฝังสีปากกึ่งถาวร แก้ปัญหาสีปากคล้ำหรือซีดให้ดูอมชมพูอย่างเป็นธรรมชาติ สีฟุ้งเบลอคล้ายทาลิปสติกแบบเกาหลี บอบช้ำน้อย</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="ฝังสีปากกึ่งถาวร แก้ปัญหาสีปากคล้ำหรือซีดให้ดูอมชมพูอย่างเป็นธรรมชาติ สีฟุ้งเบลอคล้ายทาลิปสติกแบบเกาหลี บอบช้ำน้อย" data-en="Semi-permanent lip tinting to resolve dark or pale lips naturally. Delivers a soft, blurred Korean-style lipstick effect with minimal trauma.">ฝังสีปากกึ่งถาวร แก้ปัญหาสีปากคล้ำหรือซีดให้ดูอมชมพูอย่างเป็นธรรมชาติ สีฟุ้งเบลอคล้ายทาลิปสติกแบบเกาหลี บอบช้ำน้อย</p>
     </div>
   </div>
 
@@ -524,7 +533,7 @@
         <i class="fas fa-eye text-accent-sec text-lg"></i>
       </div>
       <h3 class="text-xl font-playfair font-semibold mb-3 group-hover:text-accent-sec transition-colors">Eyeliner</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">สักตา Eyeliner, Inner-liner (สักชิดโคนขนตาให้ดูธรรมชาติ) และ Soft liner (แรเงาฟุ้งเหมือนอายแชโดว์) ช่วยให้ดวงตาดูคมชัดโดยไม่ต้องแต่งตาทุกวัน</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="สักตา Eyeliner, Inner-liner (สักชิดโคนขนตาให้ดูธรรมชาติ) และ Soft liner (แรเงาฟุ้งเหมือนอายแชโดว์) ช่วยให้ดวงตาดูคมชัดโดยไม่ต้องแต่งตาทุกวัน" data-en="Eyeliner, Inner-liner (natural lash line enhancement), and Soft liner (smudged eyeshadow effect). Achieve sharp, defined eyes without daily makeup.">สักตา Eyeliner, Inner-liner (สักชิดโคนขนตาให้ดูธรรมชาติ) และ Soft liner (แรเงาฟุ้งเหมือนอายแชโดว์) ช่วยให้ดวงตาดูคมชัดโดยไม่ต้องแต่งตาทุกวัน</p>
     </div>
   </div>
 </div>
@@ -536,7 +545,7 @@
 <!-- EQUIPMENT -->
 <section id="equipment" class="py-24 relative">
 <div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Colors & Equipment</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">สีและอุปกรณ์ระดับพรีเมียม</h2></div>
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Colors & Equipment</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1" data-th="สีและอุปกรณ์ระดับพรีเมียม" data-en="Premium Colors & Equipment">สีและอุปกรณ์ระดับพรีเมียม</h2></div>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
   <!-- LaBina -->
   <div class="flex flex-col fade-up delay-1 group relative pt-4">
@@ -548,7 +557,7 @@
     <div class="card-luxury flex-1 pt-16 pb-8 px-6 relative z-10 flex flex-col items-center text-center transition-all duration-500 group-hover:shadow-[0_20px_40px_rgba(139,30,45,0.08)]">
       <span class="equipment-badge mb-4 inline-block">Germany</span>
       <h3 class="text-2xl font-playfair font-bold mb-3 group-hover:text-accent-sec transition-colors">LaBina®</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">High-quality pigment inks with impressive range of shades. No chemical preservatives, without iron oxide. Made in Germany with 35+ years of experience. All colours are REACH compliant.</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="น้ำหมึกพิกเมนต์คุณภาพสูงจากเยอรมนี มีเฉดสีหลากหลาย ปราศจากสารกันเสียทางเคมีและ Iron Oxide มีประสบการณ์กว่า 35 ปี ทุกสีผ่านมาตรฐาน REACH" data-en="High-quality pigment inks with impressive range of shades. No chemical preservatives, without iron oxide. Made in Germany with 35+ years of experience. All colours are REACH compliant.">High-quality pigment inks with impressive range of shades. No chemical preservatives, without iron oxide. Made in Germany with 35+ years of experience. All colours are REACH compliant.</p>
     </div>
   </div>
 
@@ -562,7 +571,7 @@
     <div class="card-luxury flex-1 pt-16 pb-8 px-6 relative z-10 flex flex-col items-center text-center transition-all duration-500 group-hover:shadow-[0_20px_40px_rgba(139,30,45,0.08)]">
       <span class="equipment-badge mb-4 inline-block">USA</span>
       <h3 class="text-2xl font-playfair font-bold mb-3 group-hover:text-accent-sec transition-colors">MARA Pro</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">Hybrid formula pigment inks for PMU — lips, brows, eyes. Very fine particles for good color diffusion. Cruelty-free, environmentally friendly, with MSDS available for each shade.</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="สูตร Hybrid สำหรับงาน PMU ครบทุกบริเวณ ทั้งปาก คิ้ว ตา อนุภาคสีละเอียดช่วยให้แพร่ซึมดี Cruelty-free รักษ์สิ่งแวดล้อม มี MSDS ทุกเฉดสี" data-en="Hybrid formula pigment inks for PMU — lips, brows, eyes. Very fine particles for good color diffusion. Cruelty-free, environmentally friendly, with MSDS available for each shade.">Hybrid formula pigment inks for PMU — lips, brows, eyes. Very fine particles for good color diffusion. Cruelty-free, environmentally friendly, with MSDS available for each shade.</p>
     </div>
   </div>
 
@@ -576,7 +585,7 @@
     <div class="card-luxury flex-1 pt-16 pb-8 px-6 relative z-10 flex flex-col items-center text-center transition-all duration-500 group-hover:shadow-[0_20px_40px_rgba(139,30,45,0.08)]">
       <span class="equipment-badge mb-4 inline-block">USA</span>
       <h3 class="text-2xl font-playfair font-bold mb-3 group-hover:text-accent-sec transition-colors">Spektra Xion S</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">Premium pen-style rotary machine by Microbeau International. Designed specifically for PMU and cosmetic tattooing — precision, versatility, and comfort for professionals.</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="เครื่องสักแบบปากกาโรตารี่พรีเมียมโดย Microbeau International ออกแบบเฉพาะสำหรับ PMU และสักเครื่องสำอาง ให้ความแม่นยำ ความยืดหยุ่น และความสะดวกสบายแก่มืออาชีพ" data-en="Premium pen-style rotary machine by Microbeau International. Designed specifically for PMU and cosmetic tattooing — precision, versatility, and comfort for professionals.">Premium pen-style rotary machine by Microbeau International. Designed specifically for PMU and cosmetic tattooing — precision, versatility, and comfort for professionals.</p>
     </div>
   </div>
 
@@ -590,7 +599,7 @@
     <div class="card-luxury flex-1 pt-16 pb-8 px-6 relative z-10 flex flex-col items-center text-center transition-all duration-500 group-hover:shadow-[0_20px_40px_rgba(139,30,45,0.08)]">
       <span class="equipment-badge mb-4 inline-block">Professional</span>
       <h3 class="text-2xl font-playfair font-bold mb-3 group-hover:text-accent-sec transition-colors">Vertix Needle</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">เข็มสักแบบแคร์ทริดจ์ออกแบบเพื่อ Permanent Makeup (PMU) และงานสักลายเส้นโดยเฉพาะ ให้ความแม่นยำและปลอดภัยสูงสุด</p>
+      <p class="text-gray-400 text-sm leading-relaxed" data-th="เข็มสักแบบแคร์ทริดจ์ออกแบบเพื่อ Permanent Makeup (PMU) และงานสักลายเส้นโดยเฉพาะ ให้ความแม่นยำและปลอดภัยสูงสุด" data-en="Cartridge-style needles designed specifically for Permanent Makeup (PMU) and fine line tattooing, ensuring maximum precision and safety.">เข็มสักแบบแคร์ทริดจ์ออกแบบเพื่อ Permanent Makeup (PMU) และงานสักลายเส้นโดยเฉพาะ ให้ความแม่นยำและปลอดภัยสูงสุด</p>
     </div>
   </div>
 </div>
@@ -603,13 +612,12 @@
 <section id="removal" class="py-24 relative">
 <div class="glow-orb right-0 top-0"></div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Tattoo Removal</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">ลบรอยสัก — Etalon Mix</h2></div>
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Tattoo Removal</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1" data-th="ลบรอยสัก — Etalon Mix" data-en="Tattoo Removal — Etalon Mix">ลบรอยสัก — Etalon Mix</h2></div>
 <div class="grid md:grid-cols-2 gap-12 items-center">
 <div class="fade-left">
 <h3 class="text-2xl font-playfair font-semibold mb-6">Etalon Mix Remover</h3>
-<p class="text-gray-300 leading-relaxed mb-4">The Etalon Mix remover is for professional use only. After completing a training course, you can use it responsibly. You can use this remover during your pigmentation to correct imperfections or lighten unsightly PMU without any negative effects.</p>
-<p class="text-gray-400 leading-relaxed mb-6">ผลิตภัณฑ์ Etalon Mix Remover เหมาะสำหรับใช้โดยผู้เชี่ยวชาญเท่านั้น หลังจากผ่านการอบรมคอร์สแล้วจึงจะสามารถใช้งานได้อย่างถูกต้อง คุณสามารถใช้รีมูฟเวอร์นี้ระหว่างการฝังสีเพื่อแก้ไขข้อบกพร่อง หรือเพื่อลดความเข้มของงานสักถาวร</p>
-<a href="#booking" class="btn-accent text-sm"><i class="fas fa-calendar mr-2"></i>สอบถามเพิ่มเติม</a>
+<p class="text-gray-300 leading-relaxed mb-6" data-th="ผลิตภัณฑ์ Etalon Mix Remover เหมาะสำหรับใช้โดยผู้เชี่ยวชาญเท่านั้น หลังจากผ่านการอบรมคอร์สแล้วจึงจะสามารถใช้งานได้อย่างถูกต้อง คุณสามารถใช้รีมูฟเวอร์นี้ระหว่างการฝังสีเพื่อแก้ไขข้อบกพร่อง หรือเพื่อลดความเข้มของงานสักถาวร" data-en="The Etalon Mix remover is for professional use only. After completing a training course, you can use it responsibly. You can use this remover during your pigmentation to correct imperfections or lighten unsightly PMU without any negative effects.">ผลิตภัณฑ์ Etalon Mix Remover เหมาะสำหรับใช้โดยผู้เชี่ยวชาญเท่านั้น หลังจากผ่านการอบรมคอร์สแล้วจึงจะสามารถใช้งานได้อย่างถูกต้อง คุณสามารถใช้รีมูฟเวอร์นี้ระหว่างการฝังสีเพื่อแก้ไขข้อบกพร่อง หรือเพื่อลดความเข้มของงานสักถาวร</p>
+<a href="#booking" class="btn-accent text-sm"><i class="fas fa-calendar mr-2"></i><span data-th="สอบถามเพิ่มเติม" data-en="Inquire Now">สอบถามเพิ่มเติม</span></a>
 </div>
 <div class="fade-right">
 <img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/The-Etalon-Mix-remover1.png" alt="Etalon Mix" class="rounded-3xl w-full h-auto object-cover border border-black/10 shadow-2xl">
@@ -622,7 +630,7 @@
 <!-- BEFORE & AFTER GALLERY -->
 <section id="gallery" class="py-24">
 <div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Before & After</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">ผลงานก่อน-หลัง</h2></div>
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Before & After</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1" data-th="ผลงานก่อน-หลัง" data-en="Before & After">ผลงานก่อน-หลัง</h2></div>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
 <div class="gallery-item fade-up delay-2"><img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/HS00002.png" alt="Hairstroke Brows Before After" class="w-full h-72 object-cover"><div class="overlay"><p class="text-white font-semibold text-lg drop-shadow-lg">Hairstroke Brows</p></div></div>
 <div class="gallery-item fade-up delay-4"><img src="https://cdn.jsdelivr.net/gh/timeyebrowstudio-spec/Img/SD00002.png" alt="Shading Brows Before After" class="w-full h-72 object-cover"><div class="overlay"><p class="text-white font-semibold text-lg drop-shadow-lg">Shading Brows</p></div></div>
@@ -646,11 +654,11 @@
 <section id="reviews" class="py-24 relative">
 <div class="glow-orb right-10 top-20"></div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
-<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Testimonials</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">รีวิวจากลูกค้า</h2></div>
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Testimonials</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1" data-th="รีวิวจากลูกค้า" data-en="Testimonials">รีวิวจากลูกค้า</h2></div>
 <div class="grid md:grid-cols-3 gap-8">
 <div class="testimonial-card fade-up delay-2">
 <div class="flex gap-1 mb-6 mt-2"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
-<p class="text-gray-300 text-sm leading-relaxed mb-8">"ทำสักคิ้ว Hairstroke กับ Master Tim ได้ผลลัพธ์ที่เป็นธรรมชาติมากๆ เส้นคิ้วคมชัดสวยเหมือนขนคิ้วจริง ประทับใจมากค่ะ"</p>
+<p class="text-gray-300 text-sm leading-relaxed mb-8" data-th='"ทำสักคิ้ว Hairstroke กับ Master Tim ได้ผลลัพธ์ที่เป็นธรรมชาติมากๆ เส้นคิ้วคมชัดสวยเหมือนขนคิ้วจริง ประทับใจมากค่ะ"' data-en='"Did Hairstroke brows with Master Tim and got very natural results. The strokes are sharp and look like real hair. Very impressed!"'>"ทำสักคิ้ว Hairstroke กับ Master Tim ได้ผลลัพธ์ที่เป็นธรรมชาติมากๆ เส้นคิ้วคมชัดสวยเหมือนขนคิ้วจริง ประทับใจมากค่ะ"</p>
 <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-black/10">K</div><div><p class="font-semibold text-sm">Khun Koy</p><p class="text-gray-500 text-xs mt-0.5">Hairstroke Brows</p></div></div>
 </div>
 <div class="testimonial-card fade-up delay-4">
@@ -660,7 +668,7 @@
 </div>
 <div class="testimonial-card fade-up delay-6">
 <div class="flex gap-1 mb-6 mt-2"><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i><i class="star fas fa-star"></i></div>
-<p class="text-gray-300 text-sm leading-relaxed mb-8">"เรียนคอร์สสัก PMU กับ Master Tim 5 วัน ได้ความรู้เยอะมากๆ สอนละเอียดทุกขั้นตอน พร้อมอุปกรณ์ครบเซ็ต คุ้มมากค่ะ!"</p>
+<p class="text-gray-300 text-sm leading-relaxed mb-8" data-th='"เรียนคอร์สสัก PMU กับ Master Tim 5 วัน ได้ความรู้เยอะมากๆ สอนละเอียดทุกขั้นตอน พร้อมอุปกรณ์ครบเซ็ต คุ้มมากค่ะ!"' data-en='"Took the 5-day PMU course with Master Tim and gained so much knowledge. Taught every step in detail with a complete equipment set. Very worth it!"'>"เรียนคอร์สสัก PMU กับ Master Tim 5 วัน ได้ความรู้เยอะมากๆ สอนละเอียดทุกขั้นตอน พร้อมอุปกรณ์ครบเซ็ต คุ้มมากค่ะ!"</p>
 <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-transparent flex items-center justify-center text-accent-sec font-bold text-lg border border-black/10">N</div><div><p class="font-semibold text-sm">Nong Nid</p><p class="text-gray-500 text-xs mt-0.5">PMU Training Course</p></div></div>
 </div>
 </div>
@@ -678,13 +686,13 @@
 </div>
 <div class="fade-right">
 <p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3">About Us</p>
-<h2 class="text-3xl md:text-5xl font-playfair font-bold mb-6">เกี่ยวกับ<br><span class="text-accent-sec">Tim Eyebrow Studio</span></h2>
-<p class="text-gray-300 leading-relaxed mb-4">ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
-<p class="text-gray-400 leading-relaxed mb-6">Master Tim มีประสบการณ์มากกว่า 8 ปี ในวงการ Permanent Makeup ใช้อุปกรณ์และสีระดับพรีเมียมจากเยอรมนีและอเมริกา เพื่อให้ลูกค้าได้รับผลลัพธ์ที่ดีที่สุด</p>
+<h2 class="text-3xl md:text-5xl font-playfair font-bold mb-6" data-th="เกี่ยวกับ<br><span class='text-accent-sec'>Tim Eyebrow Studio</span>" data-en="About<br><span class='text-accent-sec'>Tim Eyebrow Studio</span>">เกี่ยวกับ<br><span class="text-accent-sec">Tim Eyebrow Studio</span></h2>
+<p class="text-gray-300 leading-relaxed mb-4" data-th="ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ" data-en="Experts in correcting sparse brows, short tails, shapeless brows, and naturally dark or pale lips using advanced artistry for beautiful natural results.">ผู้เชี่ยวชาญด้านการแก้ไข คิ้วบาง หางคิ้วสั้น คิ้วไม่เป็นทรง ปากคล้ำกรรมพันธุ์ ปากซีด ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
+<p class="text-gray-400 leading-relaxed mb-6" data-th="Master Tim มีประสบการณ์มากกว่า 8 ปี ในวงการ Permanent Makeup ใช้อุปกรณ์และสีระดับพรีเมียมจากเยอรมนีและอเมริกา เพื่อให้ลูกค้าได้รับผลลัพธ์ที่ดีที่สุด" data-en="Master Tim has over 8 years of experience in the Permanent Makeup industry, using premium equipment and colors from Germany and the USA to give clients the best results.">Master Tim มีประสบการณ์มากกว่า 8 ปี ในวงการ Permanent Makeup ใช้อุปกรณ์และสีระดับพรีเมียมจากเยอรมนีและอเมริกา เพื่อให้ลูกค้าได้รับผลลัพธ์ที่ดีที่สุด</p>
 <div class="flex flex-wrap gap-4">
-<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">8+</p><p class="text-gray-400 text-xs mt-1">ปีประสบการณ์</p></div>
-<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">5K+</p><p class="text-gray-400 text-xs mt-1">ลูกค้าที่ไว้วางใจ</p></div>
-<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">200+</p><p class="text-gray-400 text-xs mt-1">นักเรียนที่ผ่านอบรม</p></div>
+<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">8+</p><p class="text-gray-400 text-xs mt-1" data-th="ปีประสบการณ์" data-en="Years Exp">ปีประสบการณ์</p></div>
+<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">5K+</p><p class="text-gray-400 text-xs mt-1" data-th="ลูกค้าที่ไว้วางใจ" data-en="Trusted Clients">ลูกค้าที่ไว้วางใจ</p></div>
+<div class="px-5 py-3 rounded-2xl bg-black/5 border border-black/10 text-center"><p class="text-accent-sec font-playfair font-bold text-2xl">200+</p><p class="text-gray-400 text-xs mt-1" data-th="นักเรียนที่ผ่านอบรม" data-en="Trained Students">นักเรียนที่ผ่านอบรม</p></div>
 </div>
 </div>
 </div>
@@ -698,8 +706,8 @@
 <div class="glow-orb left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]"></div>
 <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
 <p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Book Now</p>
-<h2 class="text-3xl md:text-5xl font-playfair font-bold section-title mb-4 fade-up delay-1">จองใช้บริการ</h2>
-<p class="text-gray-400 mb-12 max-w-xl mx-auto fade-up delay-2">เลือกช่องทางที่สะดวกสำหรับคุณ เพื่อนัดหมายหรือสอบถามรายละเอียดเพิ่มเติม</p>
+<h2 class="text-3xl md:text-5xl font-playfair font-bold section-title mb-4 fade-up delay-1" data-th="จองใช้บริการ" data-en="Book Now">จองใช้บริการ</h2>
+<p class="text-gray-400 mb-12 max-w-xl mx-auto fade-up delay-2" data-th="เลือกช่องทางที่สะดวกสำหรับคุณ เพื่อนัดหมายหรือสอบถามรายละเอียดเพิ่มเติม" data-en="Choose your preferred channel to book an appointment or ask for more details.">เลือกช่องทางที่สะดวกสำหรับคุณ เพื่อนัดหมายหรือสอบถามรายละเอียดเพิ่มเติม</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
 <a href="https://wa.me/66842364956" target="_blank" class="social-booking-btn whatsapp fade-up delay-1"><i class="fab fa-whatsapp text-2xl"></i><span>WhatsApp</span></a>
 <a href="https://lin.ee/IjNi9e3" target="_blank" class="social-booking-btn line fade-up delay-2"><i class="fab fa-line text-2xl"></i><span>Line OA</span></a>
@@ -715,16 +723,16 @@
 <!-- CONTACT & LOCATION -->
 <section id="contact" class="py-24">
 <div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Contact Us</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1">ติดต่อเรา</h2></div>
+<div class="text-center mb-16"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3 fade-up">Contact Us</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title fade-up delay-1" data-th="ติดต่อเรา" data-en="Contact Us">ติดต่อเรา</h2></div>
 <div class="grid md:grid-cols-2 gap-12">
 <div class="fade-left">
 <div class="card-luxury p-8">
-<h3 class="text-xl font-playfair font-semibold mb-6">📍 Location</h3>
+<h3 class="text-xl font-playfair font-semibold mb-6" data-th="📍 ที่ตั้ง" data-en="📍 Location">📍 ที่ตั้ง</h3>
 <p class="text-gray-300 leading-relaxed mb-2">Retro One Building, Soi Sutthisan 1</p>
 <p class="text-gray-300 leading-relaxed mb-6">Saphan Kwai, Bangkok, Thailand</p>
 <a href="https://maps.app.goo.gl/o1QZYGT3dxpRqfuq8" target="_blank" class="btn-accent text-sm inline-flex items-center gap-2"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
 <hr class="my-8 border-black/10">
-<h3 class="text-xl font-playfair font-semibold mb-4">📱 ช่องทางติดต่อ</h3>
+<h3 class="text-xl font-playfair font-semibold mb-4" data-th="📱 ช่องทางติดต่อ" data-en="📱 Contact Channels">📱 ช่องทางติดต่อ</h3>
 <div class="space-y-3">
 <a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-instagram text-lg w-6"></i>@tim_eyebrow</a>
 <a href="https://lin.ee/IjNi9e3" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-accent-sec transition-colors text-sm"><i class="fab fa-line text-lg w-6"></i>Line OA</a>
@@ -748,7 +756,7 @@
       <div class="glow-orb left-1/2 top-0 -translate-x-1/2 w-[600px] h-[600px]"></div>
       <div class="max-w-5xl mx-auto px-6 relative z-10">
         <button id="back-to-home" class="btn-outline mb-10 inline-flex items-center gap-2 px-6 py-2 text-sm rounded-full">
-          <i class="fas fa-arrow-left"></i> กลับสู่หน้าหลัก
+          <i class="fas fa-arrow-left"></i> <span data-th="กลับสู่หน้าหลัก" data-en="Back to Home">กลับสู่หน้าหลัก</span>
         </button>
         <div class="fade-up visible">
           <h1 id="service-detail-title" class="text-4xl md:text-6xl font-playfair font-bold mb-6 text-accent-sec">Title</h1>
@@ -768,90 +776,49 @@
       <div class="glow-orb left-0 bottom-0"></div>
       <div class="max-w-7xl mx-auto px-6 relative z-10">
         <button id="back-to-home-course" class="btn-outline mb-10 inline-flex items-center gap-2 px-6 py-2 text-sm rounded-full">
-          <i class="fas fa-arrow-left"></i> กลับสู่หน้าหลัก
+          <i class="fas fa-arrow-left"></i> <span data-th="กลับสู่หน้าหลัก" data-en="Back to Home">กลับสู่หน้าหลัก</span>
         </button>
         
-        <div class="text-center mb-12"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3">🧑🏻‍🎨 Training Course</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title">คลาสเรียน PMU</h2></div>
-        <!-- Tabs -->
-        <div class="flex justify-center gap-3 mb-10 flex-wrap">
-        <button class="course-tab tab-active px-6 py-3 rounded-full text-sm font-semibold border border-black/10 transition-all" data-tab="tab-en">English</button>
-        <button class="course-tab px-6 py-3 rounded-full text-sm font-semibold border border-black/10 bg-black/5 transition-all hover:bg-black/10" data-tab="tab-th">ภาษาไทย</button>
-        </div>
-        <!-- English Panel -->
-        <div id="tab-en" class="course-panel card-luxury p-8 md:p-12">
+        <div class="text-center mb-12"><p class="text-accent-sec tracking-[0.3em] uppercase text-sm mb-3">🧑🏻‍🎨 Training Course</p><h2 class="text-3xl md:text-5xl font-playfair font-bold section-title" data-th="คลาสเรียน PMU" data-en="PMU Training Course">คลาสเรียน PMU</h2></div>
+        <!-- Consolidated Panel -->
+        <div id="course-panel-merged" class="course-panel card-luxury p-8 md:p-12">
         <div class="grid md:grid-cols-2 gap-10">
         <div>
-        <h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">What You'll Learn</h3>
+        <h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec" data-th="สิ่งที่คุณจะได้เรียนรู้" data-en="What You'll Learn">สิ่งที่คุณจะได้เรียนรู้</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Super Hairstroke techniques</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Natural PMU Safety</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Skin, Anatomy & Chemistry</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Pigmentology & Color Mixing</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Needle & Equipment Knowledge</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Shaping & Pre Drawing</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>Melanin Color Theory</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>One on One Price Menu Coaching</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>After Care & Tips</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>A Live Model & Practice Evaluation</li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="เทคนิค Super Hairstroke" data-en="Super Hairstroke techniques">เทคนิค Super Hairstroke</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="ความปลอดภัยในการทำ PMU แบบธรรมชาติ" data-en="Natural PMU Safety">ความปลอดภัยในการทำ PMU แบบธรรมชาติ</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="ความรู้ด้านผิวหนัง กายวิภาค และเคมี" data-en="Skin, Anatomy & Chemistry">ความรู้ด้านผิวหนัง กายวิภาค และเคมี</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="ความรู้ด้านสี (Pigmentology) และการผสมสี" data-en="Pigmentology & Color Mixing">ความรู้ด้านสี (Pigmentology) และการผสมสี</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="ความรู้เรื่องเข็มและอุปกรณ์" data-en="Needle & Equipment Knowledge">ความรู้เรื่องเข็มและอุปกรณ์</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="การออกแบบทรงคิ้วและการร่างโครง" data-en="Shaping & Pre Drawing">การออกแบบทรงคิ้วและการร่างโครง</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="ทฤษฎีสีเมลานิน" data-en="Melanin Color Theory">ทฤษฎีสีเมลานิน</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="การโค้ชส่วนตัวเรื่องการตั้งราคา" data-en="One on One Price Menu Coaching">การโค้ชส่วนตัวเรื่องการตั้งราคา</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="การดูแลหลังทำ เคล็ดลับต่างๆ" data-en="After Care & Tips">การดูแลหลังทำ เคล็ดลับต่างๆ</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i><span data-th="ปฏิบัติกับนางแบบจริง และประเมินผล" data-en="A Live Model & Practice Evaluation">ปฏิบัติกับนางแบบจริง และประเมินผล</span></li>
         </ul>
         </div>
         <div>
-        <h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">What You Get</h3>
+        <h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec" data-th="สิ่งที่คุณจะได้รับ" data-en="What You Get">สิ่งที่คุณจะได้รับ</h3>
         <ul class="space-y-2 text-gray-300 text-sm">
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Lifetime mentorship after training</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Professional training kit included</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Online home practices</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Certification at end of training</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Training Manual & Demo Models</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Lunch & Snacks provided</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>Opportunity to work at Tim Eyebrow Studio</li>
+        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i><span data-th="การให้คำปรึกษาตลอดชีพหลังเรียนจบ" data-en="Lifetime mentorship after training">การให้คำปรึกษาตลอดชีพหลังเรียนจบ</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i><span data-th="ชุดอุปกรณ์ฝึกอาชีพครบเซ็ต" data-en="Professional training kit included">ชุดอุปกรณ์ฝึกอาชีพครบเซ็ต</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i><span data-th="การฝึกออนไลน์ที่บ้าน" data-en="Online home practices">การฝึกออนไลน์ที่บ้าน</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i><span data-th="ใบประกาศนียบัตรหลังจบอบรม" data-en="Certification at end of training">ใบประกาศนียบัตรหลังจบอบรม</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i><span data-th="คู่มือการเรียน และโมเดลฝึกจริง" data-en="Training Manual & Demo Models">คู่มือการเรียน และโมเดลฝึกจริง</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i><span data-th="อาหารกลางวันและขนมว่าง" data-en="Lunch & Snacks provided">อาหารกลางวันและขนมว่าง</span></li>
+        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i><span data-th="โอกาสทำงานที่ Tim Eyebrow Studio" data-en="Opportunity to work at Tim Eyebrow Studio">โอกาสทำงานที่ Tim Eyebrow Studio</span></li>
         </ul>
         </div>
         </div>
         <div class="mt-10 p-6 rounded-2xl bg-black/5 border border-black/10">
-        <h4 class="font-playfair font-bold text-lg mb-3">Before Booking</h4>
-        <p class="text-gray-400 text-sm leading-relaxed mb-3">Fundamentals 5-day group training course is led by Master Tim in-person at Tim Eyebrow Studio. You'll receive expert guidance and intro into PMU Industry.</p>
-        <p class="text-gray-400 text-sm leading-relaxed mb-3">Choose from five options and indicate preferred payment: Full Price or Deposit. Our team will reach out within 48 hours to coordinate your date.</p>
-        <p class="text-accent-sec text-sm font-semibold">⚠️ All payments are non-refundable, only transferable up to 1 time with 14-day notice. Remaining balance for deposit option is due on first day of training.</p>
+        <h4 class="font-playfair font-bold text-lg mb-3" data-th="ก่อนทำการจอง" data-en="Before Booking">ก่อนทำการจอง</h4>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3" data-th="หลักสูตรพื้นฐาน 5 วัน สอนโดย Master Tim แบบตัวต่อตัวที่สตูดิโอ คุณจะได้รับคำแนะนำอย่างมืออาชีพ" data-en="Fundamentals 5-day group training course is led by Master Tim in-person at Tim Eyebrow Studio. You'll receive expert guidance and intro into PMU Industry.">หลักสูตรพื้นฐาน 5 วัน สอนโดย Master Tim แบบตัวต่อตัวที่สตูดิโอ คุณจะได้รับคำแนะนำอย่างมืออาชีพ</p>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3" data-th="เลือกช่องทางการชำระเงิน: ชำระเต็มจำนวน หรือ มัดจำ ทีมงานของเราจะติดต่อคุณเพื่อประสานงานวันที่สะดวกภายใน 48 ชั่วโมง" data-en="Choose your preferred payment: Full Price or Deposit. Our team will reach out within 48 hours to coordinate your date.">เลือกช่องทางการชำระเงิน: ชำระเต็มจำนวน หรือ มัดจำ ทีมงานของเราจะติดต่อคุณเพื่อประสานงานวันที่สะดวกภายใน 48 ชั่วโมง</p>
+        <p class="text-accent-sec text-sm font-semibold" data-th="⚠️ การชำระเงินทั้งหมดไม่สามารถคืนเงินได้ แต่สามารถโอนสิทธิ์ได้ 1 ครั้ง โดยต้องแจ้งล่วงหน้า 14 วัน ส่วนที่เหลือของยอดมัดจำต้องชำระในวันแรกของการอบรม" data-en="⚠️ All payments are non-refundable, only transferable up to 1 time with 14-day notice. Remaining balance for deposit option is due on first day of training.">⚠️ การชำระเงินทั้งหมดไม่สามารถคืนเงินได้ แต่สามารถโอนสิทธิ์ได้ 1 ครั้ง โดยต้องแจ้งล่วงหน้า 14 วัน ส่วนที่เหลือของยอดมัดจำต้องชำระในวันแรกของการอบรม</p>
         </div>
         </div>
-        <!-- Thai Panel -->
-        <div id="tab-th" class="course-panel hidden card-luxury p-8 md:p-12">
-        <div class="grid md:grid-cols-2 gap-10">
-        <div>
-        <h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">สิ่งที่คุณจะได้เรียนรู้</h3>
-        <ul class="space-y-2 text-gray-300 text-sm">
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>เทคนิค Super Hairstroke</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความปลอดภัยในการทำ PMU แบบธรรมชาติ</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความรู้ด้านผิวหนัง กายวิภาค และเคมี</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความรู้ด้านสี (Pigmentology) และการผสมสี</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ความรู้เรื่องเข็มและอุปกรณ์</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>การออกแบบทรงคิ้วและการร่างโครง</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>ทฤษฎีสีเมลานิน</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>การโค้ชส่วนตัวเรื่องการตั้งราคา</li>
-        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent-sec mt-0.5 text-xs"></i>การดูแลหลังทำ เคล็ดลับต่างๆ</li>
-        </ul>
-        </div>
-        <div>
-        <h3 class="text-2xl font-playfair font-bold mb-6 text-accent-sec">สิ่งที่คุณจะได้รับ</h3>
-        <ul class="space-y-2 text-gray-300 text-sm">
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>การให้คำปรึกษาตลอดชีพหลังเรียนจบ</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>ชุดอุปกรณ์ฝึกอาชีพครบเซ็ต</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>การฝึกออนไลน์ที่บ้าน</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>ใบประกาศนียบัตรหลังจบอบรม</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>คู่มือการเรียน และโมเดลฝึกจริง</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>อาหารกลางวันและขนมว่าง</li>
-        <li class="flex items-start gap-2"><i class="fas fa-gift text-accent-sec mt-0.5 text-xs"></i>โอกาสทำงานที่ Tim Eyebrow Studio</li>
-        </ul>
-        </div>
-        </div>
-        <div class="mt-10 p-6 rounded-2xl bg-black/5 border border-black/10">
-        <h4 class="font-playfair font-bold text-lg mb-3">ก่อนทำการจอง</h4>
-        <p class="text-gray-400 text-sm leading-relaxed mb-3">หลักสูตรพื้นฐาน 5 วัน สอนโดย Master Tim แบบตัวต่อตัวที่สตูดิโอ คุณจะได้รับคำแนะนำอย่างมืออาชีพ เมื่อจบคอร์สคุณจะพร้อมเริ่มต้นอาชีพและนำทักษะไปใช้จริงได้ทันที</p>
-        <p class="text-accent-sec text-sm font-semibold">⚠️ การชำระเงินทั้งหมดไม่สามารถคืนเงินได้ แต่สามารถเลื่อนเข้าคอร์สใหม่ได้ 1 ครั้ง โดยต้องแจ้งล่วงหน้าอย่างน้อย 14 วัน</p>
-        </div>
-        </div>
-        <div class="text-center mt-10"><a href="#booking" id="book-course-btn" class="btn-accent text-lg"><i class="fas fa-graduation-cap mr-2"></i>สมัครคลาสเรียน</a></div>
+        <div class="text-center mt-10"><a href="#booking" id="book-course-btn" class="btn-accent text-lg"><i class="fas fa-graduation-cap mr-2"></i><span data-th="สมัครคลาสเรียน" data-en="Enroll Now">สมัครคลาสเรียน</span></a></div>
       </div>
     </section>
 
@@ -860,41 +827,41 @@
       <div class="glow-orb left-1/2 top-0 -translate-x-1/2 w-[600px] h-[600px]"></div>
       <div class="max-w-4xl mx-auto px-6 relative z-10">
         <button id="back-to-home-policy" class="btn-outline mb-10 inline-flex items-center gap-2 px-6 py-2 text-sm rounded-full">
-          <i class="fas fa-arrow-left"></i> กลับสู่หน้าหลัก
+          <i class="fas fa-arrow-left"></i> <span data-th="กลับสู่หน้าหลัก" data-en="Back to Home">กลับสู่หน้าหลัก</span>
         </button>
         <div class="card-luxury p-8 md:p-12 fade-up visible">
-          <h1 class="text-3xl md:text-5xl font-playfair font-bold mb-8 text-accent-sec">นโยบายความเป็นส่วนตัว<br><span class="text-xl text-gray-400 font-normal tracking-wide">Privacy Policy</span></h1>
+          <h1 class="text-3xl md:text-5xl font-playfair font-bold mb-8 text-accent-sec" data-th="นโยบายความเป็นส่วนตัว" data-en="Privacy Policy">นโยบายความเป็นส่วนตัว</h1>
           <div class="text-gray-300 text-sm md:text-base leading-relaxed space-y-8">
-            <p>Tim Eyebrow Studio ให้ความสำคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณเป็นอย่างยิ่ง นโยบายฉบับนี้จัดทำขึ้นเพื่อชี้แจงรายละเอียดเกี่ยวกับการจัดเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของคุณ เพื่อสร้างความมั่นใจในการใช้บริการของเรา</p>
+            <p data-th="Tim Eyebrow Studio ให้ความสำคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณเป็นอย่างยิ่ง นโยบายฉบับนี้จัดทำขึ้นเพื่อชี้แจงรายละเอียดเกี่ยวกับการจัดเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของคุณ" data-en="Tim Eyebrow Studio values your personal data privacy. This policy explains how we collect, use, and disclose your personal information to ensure confidence in using our services.">Tim Eyebrow Studio ให้ความสำคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณเป็นอย่างยิ่ง นโยบายฉบับนี้จัดทำขึ้นเพื่อชี้แจงรายละเอียดเกี่ยวกับการจัดเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของคุณ เพื่อสร้างความมั่นใจในการใช้บริการของเรา</p>
             
             <div>
-              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">1. ข้อมูลส่วนบุคคลที่เราจัดเก็บ</h3>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3" data-th="1. ข้อมูลส่วนบุคคลที่เราจัดเก็บ" data-en="1. Personal Information We Collect">1. ข้อมูลส่วนบุคคลที่เราจัดเก็บ</h3>
               <p class="text-gray-400">เราอาจรวบรวมข้อมูลส่วนบุคคลที่จำเป็นสำหรับการให้บริการ เช่น ชื่อ-นามสกุล เบอร์โทรศัพท์ อีเมล ประวัติการรับบริการ อาการแพ้ข้อมูลทางสุขภาพเบื้องต้น และข้อมูลการโต้ตอบหรือการนัดหมายผ่านช่องทาง Social Media ต่างๆ</p>
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">2. วัตถุประสงค์ในการใช้ข้อมูล</h3>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3" data-th="2. วัตถุประสงค์ในการใช้ข้อมูล" data-en="2. Purpose of Data Use">2. วัตถุประสงค์ในการใช้ข้อมูล</h3>
               <ul class="list-disc pl-5 text-gray-400 space-y-1 mt-2">
-                <li>เพื่อยืนยันตัวตน นัดหมาย และให้บริการด้าน Permanent Makeup อย่างปลอดภัย</li>
-                <li>เพื่อใช้ติตต่อประสานงาน ติดตามผลหลังการรับบริการ</li>
-                <li>เพื่อนำเสนอโปรโมชัน ข่าวสาร หรือบริการที่เหมาะสมกับคุณ (ในกรณีที่คุณยินยอม)</li>
-                <li>เพื่อนำมาวิเคราะห์และปรับปรุงคุณภาพเว็บไซต์ ให้คุณได้รับประสบการณ์การใช้งานที่ดีเยี่ยม</li>
+                <li data-th="เพื่อยืนยันตัวตน นัดหมาย และให้บริการด้าน Permanent Makeup อย่างปลอดภัย" data-en="To verify identity, schedule appointments, and provide Permanent Makeup services safely.">เพื่อยืนยันตัวตน นัดหมาย และให้บริการด้าน Permanent Makeup อย่างปลอดภัย</li>
+                <li data-th="เพื่อใช้ติดต่อประสานงาน ติดตามผลหลังการรับบริการ" data-en="To communicate and follow up after service.">เพื่อใช้ติดต่อประสานงาน ติดตามผลหลังการรับบริการ</li>
+                <li data-th="เพื่อนำเสนอโปรโมชัน ข่าวสาร หรือบริการที่เหมาะสมกับคุณ (ในกรณีที่คุณยินยอม)" data-en="To present promotions, news, or relevant services (with your consent).">เพื่อนำเสนอโปรโมชัน ข่าวสาร หรือบริการที่เหมาะสมกับคุณ (ในกรณีที่คุณยินยอม)</li>
+                <li data-th="เพื่อนำมาวิเคราะห์และปรับปรุงคุณภาพเว็บไซต์ ให้คุณได้รับประสบการณ์การใช้งานที่ดีเยี่ยม" data-en="To analyze and improve website quality for a better user experience.">เพื่อนำมาวิเคราะห์และปรับปรุงคุณภาพเว็บไซต์ ให้คุณได้รับประสบการณ์การใช้งานที่ดีเยี่ยม</li>
               </ul>
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">3. การจัดการคุกกี้ (Cookies)</h3>
-              <p class="text-gray-400">เว็บไซต์ของเรามีการใช้งานคุกกี้ (Cookies) เพื่อวิเคราะห์ปริมาณการเข้าชม และบันทึกพฤติกรรมการใช้งานบนเว็บไซต์ เพื่อพัฒนาและมอบประสบการณ์ที่ดีที่สุดให้แก่คุณ คุณสามารถเลือก <strong>"ยอมรับ"</strong> หรือ <strong>"ปฏิเสธ"</strong> การใช้งานคุกกี้ที่ไม่จำเป็นได้จากแถบตั้งค่าคุกกี้ด้านล่าง</p>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3" data-th="3. การจัดการคุกกี้ (Cookies)" data-en="3. Cookie Management">3. การจัดการคุกกี้ (Cookies)</h3>
+              <p class="text-gray-400" data-th="เว็บไซต์ของเรามีการใช้งานคุกกี้ (Cookies) เพื่อวิเคราะห์ปริมาณการเข้าชม และบันทึกพฤติกรรมการใช้งานบนเว็บไซต์ คุณสามารถเลือก &quot;ยอมรับ&quot; หรือ &quot;ปฏิเสธ&quot; การใช้งานคุกกี้ที่ไม่จำเป็น" data-en="Our website uses cookies to analyze traffic and record user behavior. You can choose to &quot;Accept&quot; or &quot;Reject&quot; non-essential cookies from the cookie settings bar below.">เว็บไซต์ของเรามีการใช้งานคุกกี้ (Cookies) เพื่อวิเคราะห์ปริมาณการเข้าชม และบันทึกพฤติกรรมการใช้งานบนเว็บไซต์ เพื่อพัฒนาและมอบประสบการณ์ที่ดีที่สุดให้แก่คุณ คุณสามารถเลือก <strong>"ยอมรับ"</strong> หรือ <strong>"ปฏิเสธ"</strong> การใช้งานคุกกี้ที่ไม่จำเป็นได้จากแถบตั้งค่าคุกกี้ด้านล่าง</p>
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">4. การเปิดเผยข้อมูล</h3>
-              <p class="text-gray-400">ข้อมูลของคุณจะถูกเก็บรักษาเป็นความลับอย่างสูงสุด เราจะไม่ขาย แลกเปลี่ยน หรือเปิดเผยข้อมูลส่วนบุคคลของคุณแก่บุคคลที่สาม เว้นแต่จะได้รับความยินยอมจากคุณ หรือเป็นการปฏิบัติตามกฎหมายที่เกี่ยวข้อง</p>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3" data-th="4. การเปิดเผยข้อมูล" data-en="4. Disclosure of Information">4. การเปิดเผยข้อมูล</h3>
+              <p class="text-gray-400" data-th="ข้อมูลของคุณจะถูกเก็บรักษาเป็นความลับอย่างสูงสุด เราจะไม่ขาย แลกเปลี่ยน หรือเปิดเผยข้อมูลส่วนบุคคลของคุณแก่บุคคลที่สาม" data-en="Your information will be kept strictly confidential. We will not sell, exchange, or disclose your personal data to third parties without your consent or as required by law.">ข้อมูลของคุณจะถูกเก็บรักษาเป็นความลับอย่างสูงสุด เราจะไม่ขาย แลกเปลี่ยน หรือเปิดเผยข้อมูลส่วนบุคคลของคุณแก่บุคคลที่สาม เว้นแต่จะได้รับความยินยอมจากคุณ หรือเป็นการปฏิบัติตามกฎหมายที่เกี่ยวข้อง</p>
             </div>
 
             <div>
-              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3">5. สิทธิของเจ้าของข้อมูล</h3>
-              <p class="text-gray-400">คุณมีสิทธิในการขอเข้าถึง ขอแก้ไข หรือขอลบข้อมูลส่วนบุคคลของคุณที่อยู่ในการดูแลของเราได้ตลอดเวลา โดยสามารถติดต่อผ่านช่องทาง Official Line หรือเบอร์โทรศัพท์ที่แสดงบนหน้าเว็บไซต์</p>
+              <h3 class="text-xl font-playfair font-bold text-gray-100 mb-3" data-th="5. สิทธิของเจ้าของข้อมูล" data-en="5. Data Subject Rights">5. สิทธิของเจ้าของข้อมูล</h3>
+              <p class="text-gray-400" data-th="คุณมีสิทธิในการขอเข้าถึง ขอแก้ไข หรือขอลบข้อมูลส่วนบุคคลของคุณที่อยู่ในการดูแลของเราได้ตลอดเวลา โดยสามารถติดต่อผ่านช่องทาง Official Line หรือเบอร์โทรศัพท์" data-en="You have the right to access, correct, or delete your personal data at any time by contacting us via Official Line or the phone number on our website.">คุณมีสิทธิในการขอเข้าถึง ขอแก้ไข หรือขอลบข้อมูลส่วนบุคคลของคุณที่อยู่ในการดูแลของเราได้ตลอดเวลา โดยสามารถติดต่อผ่านช่องทาง Official Line หรือเบอร์โทรศัพท์ที่แสดงบนหน้าเว็บไซต์</p>
             </div>
           </div>
         </div>
@@ -907,7 +874,7 @@
 <div class="grid md:grid-cols-4 gap-10">
 <div class="md:col-span-2">
 <h3 class="text-2xl font-playfair font-bold mb-4">TIM <span class="text-accent-sec">EYEBROW</span> STUDIO</h3>
-<p class="text-gray-400 text-sm leading-relaxed max-w-md">ผู้เชี่ยวชาญด้าน Permanent Makeup ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
+<p class="text-gray-400 text-sm leading-relaxed max-w-md" data-th="ผู้เชี่ยวชาญด้าน Permanent Makeup ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ" data-en="Experts in Permanent Makeup with advanced artistry for beautiful and natural results.">ผู้เชี่ยวชาญด้าน Permanent Makeup ด้วยเทคนิคศิลปะขั้นสูง เพื่อผลลัพธ์ที่สวยงามและเป็นธรรมชาติ</p>
 <div class="flex gap-4 mt-6">
 <a href="https://www.instagram.com/tim_eyebrow" target="_blank" class="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-instagram"></i></a>
 <a href="https://www.facebook.com/timeyebrowscenter" target="_blank" class="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all"><i class="fab fa-facebook-f"></i></a>
@@ -916,17 +883,17 @@
 </div>
 </div>
 <div>
-<h4 class="font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+<h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-th="ลิงก์ด่วน" data-en="Quick Links">Quick Links</h4>
 <ul class="space-y-2 text-gray-400 text-sm">
-<li><a href="#services" class="hover:text-accent-sec transition-colors">บริการ</a></li>
-<li><a href="#equipment" class="hover:text-accent-sec transition-colors">สีและอุปกรณ์</a></li>
-<li><a href="#removal" class="hover:text-accent-sec transition-colors">ลบรอยสัก</a></li>
-<li><a href="#course" class="hover:text-accent-sec transition-colors">คลาสเรียน</a></li>
-<li><a href="#gallery" class="hover:text-accent-sec transition-colors">ผลงาน</a></li>
+<li><a href="#services" class="hover:text-accent-sec transition-colors"><span data-th="บริการ" data-en="Services">บริการ</span></a></li>
+<li><a href="#equipment" class="hover:text-accent-sec transition-colors"><span data-th="สีและอุปกรณ์" data-en="Equipment">สีและอุปกรณ์</span></a></li>
+<li><a href="#removal" class="hover:text-accent-sec transition-colors"><span data-th="ลบรอยสัก" data-en="Removal">ลบรอยสัก</span></a></li>
+<li><a href="#course" class="hover:text-accent-sec transition-colors"><span data-th="คลาสเรียน" data-en="Courses">คลาสเรียน</span></a></li>
+<li><a href="#gallery" class="hover:text-accent-sec transition-colors"><span data-th="ผลงาน" data-en="Gallery">ผลงาน</span></a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+<h4 class="font-semibold mb-4 text-sm uppercase tracking-wider" data-th="ติดต่อ" data-en="Contact">ติดต่อ</h4>
 <ul class="space-y-2 text-gray-400 text-sm">
 <li>Retro One Building</li>
 <li>Soi Sutthisan 1, Saphan Kwai</li>
@@ -945,12 +912,12 @@
     <!-- COOKIE BANNER -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] bg-dark/95 backdrop-blur-md border-t border-black/10 p-4 md:p-6 translate-y-full transition-transform duration-500 ease-out flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="text-sm text-gray-300 max-w-4xl leading-relaxed">
-        เว็บไซต์นี้ใช้คุกกี้เพื่อวัตถุประสงค์ในการปรับปรุงประสบการณ์ของผู้ใช้ให้ดียิ่งขึ้น 
-        <a href="#privacy-policy" id="read-policy-link" class="text-accent hover:text-accent-sec underline transition-colors ml-1">อ่านข้อมูลเพิ่มเติม</a>
+        <span data-th="เว็บไซต์นี้ใช้คุกกี้เพื่อวัตถุประสงค์ในการปรับปรุงประสบการณ์ของผู้ใช้ให้ดียิ่งขึ้น" data-en="This website uses cookies to improve user experience.">เว็บไซต์นี้ใช้คุกกี้เพื่อวัตถุประสงค์ในการปรับปรุงประสบการณ์ของผู้ใช้ให้ดียิ่งขึ้น</span> 
+        <a href="#privacy-policy" id="read-policy-link" class="text-accent hover:text-accent-sec underline transition-colors ml-1"><span data-th="อ่านข้อมูลเพิ่มเติม" data-en="Read More">อ่านข้อมูลเพิ่มเติม</span></a>
       </div>
       <div class="flex gap-3 whitespace-nowrap">
-        <button id="reject-cookies" class="px-4 py-2 text-sm font-semibold text-gray-400 hover:text-gray-100 transition-colors magnetic">ปฏิเสธ</button>
-        <button id="accept-cookies" class="btn-accent py-2 px-6 text-sm magnetic">ยอมรับ</button>
+        <button id="reject-cookies" class="px-4 py-2 text-sm font-semibold text-gray-400 hover:text-gray-100 transition-colors magnetic"><span data-th="ปฏิเสธ" data-en="Reject">ปฏิเสธ</span></button>
+        <button id="accept-cookies" class="btn-accent py-2 px-6 text-sm magnetic"><span data-th="ยอมรับ" data-en="Accept">ยอมรับ</span></button>
       </div>
     </div>
 
